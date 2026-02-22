@@ -28,7 +28,7 @@ const AIModels: React.FC = () => {
         {/* Partner With Section */}
         <div className="mb-16">
             <p className="text-center text-xs font-bold text-slate-400 tracking-[0.2em] uppercase mb-8">
-              Partner With
+              {content.aiModels.partnerWith}
             </p>
             <div className="flex flex-wrap justify-center items-center gap-10 md:gap-16 grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
                {/* IBM Startup Partner Plus */}
@@ -80,6 +80,19 @@ const AIModels: React.FC = () => {
                  <div className="flex flex-col text-[11px] font-bold text-slate-700 leading-tight uppercase tracking-wide text-left group-hover:text-black transition-colors">
                    <span>Small Business</span>
                    <span>Program</span>
+                 </div>
+               </a>
+
+               {/* UC Launch Accelerator Program */}
+               <a href="https://uclaunch.com/" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-3 transition-transform hover:scale-105 group">
+                 <img 
+                   src="https://image2url.com/r2/default/images/1771797158371-ac1f1e2d-1724-46ed-9eaa-16d5ae93a21d.png" 
+                   alt="Berkeley Haas" 
+                   className="h-8 md:h-10 w-auto" 
+                 />
+                 <div className="flex flex-col text-[11px] font-bold text-slate-700 leading-tight uppercase tracking-wide text-left group-hover:text-[#003262] transition-colors">
+                   <span>UC Launch</span>
+                   <span>Accelerator</span>
                  </div>
                </a>
 

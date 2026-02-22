@@ -22,6 +22,7 @@ export interface ContentType {
   };
   aiModels: {
     title: string;
+    partnerWith: string;
   };
   features: {
     title: string;
@@ -188,7 +189,8 @@ const en: ContentType = {
     ctaCrowdfund: "1 Dollar Crowdfunding Appreciation"
   },
   aiModels: {
-    title: "BUILT ON LEADING AI MODELS"
+    title: "BUILT ON LEADING AI MODELS",
+    partnerWith: "Partner With"
   },
   features: {
     title: "Our Focus Areas",
@@ -533,7 +535,8 @@ const zh: ContentType = {
     ctaCrowdfund: "1美元众筹致谢"
   },
   aiModels: {
-    title: "基于领先的 AI 模型构建"
+    title: "基于领先的 AI 模型构建",
+    partnerWith: "合作伙伴"
   },
   features: {
     title: "我们的核心领域",
@@ -801,7 +804,8 @@ const es: ContentType = {
     ctaCrowdfund: "Crowdfunding de 1 Dólar"
   },
   aiModels: {
-    title: "CONSTRUIDO SOBRE MODELOS DE IA LÍDERES"
+    title: "CONSTRUIDO SOBRE MODELOS DE IA LÍDERES",
+    partnerWith: "En asociación con"
   },
   features: {
     title: "Nuestras Áreas de Enfoque",
@@ -1069,7 +1073,8 @@ const ko: ContentType = {
     ctaCrowdfund: "1달러 크라우드펀딩 감사"
   },
   aiModels: {
-    title: "선도적인 AI 모델 기반 구축"
+    title: "선도적인 AI 모델 기반 구축",
+    partnerWith: "협력 파트너"
   },
   features: {
     title: "우리의 핵심 분야",
