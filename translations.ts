@@ -224,7 +224,7 @@ const en: ContentType = {
   trust: {
     title: "Why Students, Researchers, and Businesses Trust Us",
     points: [
-      "U.S.-based company founded by UCSD alumni in California",
+      "U.S.-based company founded by UCSD and University of Waterloo alumni",
       "Bridging U.S.–China technical and research ecosystems",
       "AI-first product philosophy with ethical safeguards",
       "Commitment to strict data privacy & confidentiality"
@@ -288,7 +288,7 @@ const en: ContentType = {
   team: {
     hero: {
       title: "Our Team",
-      subheading: "Our founding team brings global perspectives and academic backgrounds from top U.S. and Chinese institutions such as UC San Diego and Fudan University. We combine expertise in AI systems, backend engineering, and research operations to build reliable, intelligent tools for modern work and verification."
+      subheading: "Our founding team brings global perspectives and academic backgrounds from top U.S., Canadian, and Chinese institutions such as UC San Diego, University of Waterloo, and Fudan University. We combine expertise in AI systems, backend engineering, and research operations to build reliable, intelligent tools for modern work and verification."
     },
     philosophy: {
       title: "How We Work",
@@ -316,6 +316,7 @@ const en: ContentType = {
       bullets: [
         "UC San Diego (Computer Engineering & Economics)",
         "Fudan University (Computer Science)",
+        "University of Waterloo",
         "Experience in AI engineering, backend systems, product development, and research workflows",
         "Previously worked on machine learning, distributed systems, user research, and cross-border tech products"
       ],
@@ -570,7 +571,7 @@ const zh: ContentType = {
   trust: {
     title: "为什么学生、研究人员和企业信任我们",
     points: [
-      "总部位于美国加州的 UCSD 校友创立公司",
+      "总部位于美国加州的 UCSD 和滑铁卢大学校友创立公司",
       "连接中美技术和研究生系统",
       "AI 优先的产品理念，具备道德保障",
       "承诺严格的数据隐私和保密性"
@@ -634,7 +635,7 @@ const zh: ContentType = {
   team: {
     hero: {
       title: "我们的团队",
-      subheading: "我们的创始团队带来全球视野和来自加州大学圣地亚哥分校和复旦大学等中美顶尖机构的学术背景。我们结合 AI 系统、后端工程和研究运营方面的专业知识，为现代 work 和验证构建可靠의 지능형 도구。"
+      subheading: "我们的创始团队带来全球视野和来自加州大学圣地亚哥分校、滑铁卢大学和复旦大学等中美加顶尖机构的学术背景。我们结合 AI 系统、后端工程和研究运营方面的专业知识，为现代 work 和验证构建可靠의 지능형 도구。"
     },
     philosophy: {
       title: "我们的工作方式",
@@ -662,8 +663,9 @@ const zh: ContentType = {
       bullets: [
         "加州大学圣地亚哥分校 (计算机工程与经济学)",
         "复旦大学 (计算机科学)",
+        "滑铁卢大学 (University of Waterloo)",
         "在 AI 工程、后端系统、产品开发和研究工作流方面拥有经验",
-        "曾从事机器学习、分布式系统、用户研究和跨境科技产品工作"
+        "曾从事机器学习、分布式 systems、用户研究和跨境科技产品工作"
       ],
       closing: "我们正在扩充核心团队，以开发 AuthenlyUSA 等产品。"
     },
@@ -839,7 +841,7 @@ const es: ContentType = {
   trust: {
     title: "Por qué confían en nosotros",
     points: [
-      "Empresa con sede en EE. UU. fundada por exalumnos de UCSD",
+      "Empresa con sede en EE. UU. fundada por exalumnos de UCSD y la Universidad de Waterloo",
       "Uniendo ecosistemas técnicos y de investigación de EE. UU. y China",
       "Filosofía de producto primero IA con salvaguardas éticas",
       "Compromiso con la estricta privacidad y confidencialidad de los datos"
@@ -903,7 +905,7 @@ const es: ContentType = {
   team: {
     hero: {
       title: "Nuestro Equipo",
-      subheading: "Nuestro equipo fundador aporta perspectivas globales y antecedentes académicos de las mejores instituciones de EE. UU. y China."
+      subheading: "Nuestro equipo fundador aporta perspectivas globales y antecedentes académicos de las mejores instituciones de EE. UU., Canadá y China, como UC San Diego, la Universidad de Waterloo y la Universidad de Fudan."
     },
     philosophy: {
       title: "Cómo Trabajamos",
@@ -931,6 +933,7 @@ const es: ContentType = {
       bullets: [
         "UC San Diego (Ingeniería Informática y Economía)",
         "Universidad de Fudan (Ciencias de la Computación)",
+        "Universidad de Waterloo",
         "Experiencia en ingeniería de IA y sistemas backend",
         "Trabajo previo en aprendizaje automático y productos tecnológicos transfronterizos"
       ],
@@ -1108,7 +1111,7 @@ const ko: ContentType = {
   trust: {
     title: "신뢰하는 이유",
     points: [
-      "캘리포니아 UCSD 동문이 설립한 미국 기반 회사",
+      "캘리포니아 UCSD 및 워털루 대학교(University of Waterloo) 동문이 설립한 미국 기반 회사",
       "미국-중국 기술 및 연구 생태계 연결",
       "윤리적 안전장치를 갖춘 AI 우선 제품 철학",
       "엄격한 데이터 개인 정보 보호 및 기밀 유지 약속"
@@ -1172,7 +1175,7 @@ const ko: ContentType = {
   team: {
     hero: {
       title: "우리 팀",
-      subheading: "창립 팀은 UC San Diego 및 Fudan University와 같은 미국 및 중국 최고의 기관에서 글로벌 관점과 학문적 배경을 제공합니다."
+      subheading: "창립 팀은 UC San Diego, 워털루 대학교(University of Waterloo) 및 복단대학교(Fudan University)와 같은 미국, 캐나다 및 중국 최고의 기관에서 글로벌 관점과 학문적 배경을 제공합니다."
     },
     philosophy: {
       title: "우리의 업무 방식",
@@ -1200,6 +1203,7 @@ const ko: ContentType = {
       bullets: [
         "UC San Diego (컴퓨터 공학 및 경제학)",
         "Fudan University (컴퓨터 과학)",
+        "워털루 대학교 (University of Waterloo)",
         "AI 엔지니어링 및 백엔드 시스템 경험",
         "머신 러닝 및 국경 간 기술 제품 경험"
       ],

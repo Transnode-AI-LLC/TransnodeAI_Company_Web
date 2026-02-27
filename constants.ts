@@ -48,7 +48,7 @@ export const FEATURES: FeatureItem[] = [
 ];
 
 export const TRUST_POINTS: TrustPoint[] = [
-  { text: "U.S.-based company founded by UCSD alumni in California" },
+  { text: "U.S.-based company founded by UCSD and University of Waterloo alumni" },
   { text: "Bridging U.S.–China technical and research ecosystems" },
   { text: "AI-first product philosophy with ethical safeguards" },
   { text: "Commitment to strict data privacy & confidentiality" },
