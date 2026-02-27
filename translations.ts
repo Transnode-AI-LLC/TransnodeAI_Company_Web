@@ -254,9 +254,9 @@ const en: ContentType = {
         points: ["AI credibility scoring", "Skill-based verification tasks", "Personalized career insight"]
       },
       {
-        name: "US-China E-Commerce AI Tools",
-        tagline: "Market Enablement",
-        points: ["Content generation", "Low-cost storefront setup", "Market analytics"]
+        name: "Transeed",
+        tagline: "Smart iOS App for Healthy Habits",
+        points: ["Encourage healthy screen habits", "Monetary allowances for offline time", "Positive behavior motivation"]
       },
       {
         name: "Web Development Service & Digital Solutions",
@@ -600,9 +600,9 @@ const zh: ContentType = {
         points: ["AI 可信度评分", "基于技能的验证任务", "个性化职业洞察"]
       },
       {
-        name: "中美电商 AI 工具",
-        tagline: "市场赋能",
-        points: ["内容生成", "低成本开店", "市场分析"]
+        name: "Transeed",
+        tagline: "智能 iOS 应用，培养健康习惯",
+        points: ["鼓励健康的屏幕使用习惯", "离线时间奖励真实金钱津贴", "通过激励将日常惯例转变为积极行为"]
       },
       {
         name: "网站开发服务与数字解决方案",
@@ -869,9 +869,9 @@ const es: ContentType = {
         points: ["Puntuación de credibilidad IA", "Verificación de habilidades", "Información profesional personalizada"]
       },
       {
-        name: "Herramientas de IA para E-Commerce",
-        tagline: "Habilitación de Mercado",
-        points: ["Generación de contenido", "Configuración de tienda de bajo costo", "Analítica de mercado"]
+        name: "Transeed",
+        tagline: "App inteligente para hábitos saludables",
+        points: ["Fomenta hábitos saludables frente a la pantalla", "Recompensas monetarias por tiempo desconectado", "Motivación para comportamientos positivos"]
       },
       {
         name: "Servicio de Desarrollo Web y Soluciones Digitales",
@@ -1138,9 +1138,9 @@ const ko: ContentType = {
         points: ["AI 신뢰성 점수", "기술 기반 검증 과제", "개인화된 진로 통찰력"]
       },
       {
-        name: "미중 전자상거래 AI 도구",
-        tagline: "시장 활성화",
-        points: ["콘텐츠 생성", "저비용 상점 설정", "시장 분석"]
+        name: "Transeed",
+        tagline: "건강한 습관을 위한 스마트 iOS 앱",
+        points: ["건강한 스크린 사용 습관 장려", "오프라인 시간에 대한 실제 금전적 보상", "긍정적인 행동 동기 부여"]
       },
       {
         name: "웹 개발 서비스 및 디지털 솔루션",

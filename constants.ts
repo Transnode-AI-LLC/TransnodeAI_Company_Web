@@ -72,12 +72,12 @@ export const PRODUCTS: ProductDetail[] = [
     ]
   },
   {
-    name: "US-China E-Commerce AI Tools",
-    tagline: "Market Enablement",
+    name: "Transeed",
+    tagline: "Smart iOS App for Healthy Habits",
     points: [
-      "Content generation",
-      "Low-cost storefront setup",
-      "Market analytics"
+      "Encourage healthy screen habits",
+      "Monetary allowances for offline time",
+      "Positive behavior motivation"
     ]
   },
   {

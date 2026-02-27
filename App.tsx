@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Navbar, { ViewState } from './components/Navbar';
 import Hero from './components/Hero';
+import Partners from './components/Partners';
 import AIModels from './components/AIModels';
 import Features from './components/Features';
 import Trust from './components/Trust';
@@ -83,6 +84,7 @@ const AppContent: React.FC = () => {
               onInvestorClick={() => setIsInvestorOpen(true)}
               onCrowdfundClick={() => setIsCrowdfundOpen(true)}
             />
+            <Partners />
             <Features />
             <Trust />
             <AIModels />
