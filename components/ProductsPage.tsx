@@ -62,17 +62,38 @@ const ProductsPage: React.FC<ProductsPageProps> = ({ onJoinWaitlistClick, onQuot
                         </li>
                       ))}
                     </ul>
-                    <button 
-                      onClick={isService ? onQuoteClick : onJoinWaitlistClick}
-                      className={`px-6 py-3 rounded-lg font-bold transition-all shadow-md flex items-center gap-2 ${
-                        isService 
-                        ? 'bg-[#0A2540] text-white hover:bg-teal-600' 
-                        : 'border border-slate-200 text-slate-700 hover:bg-slate-50'
-                      }`}
-                    >
-                      {isService ? content.products.quoteBtn : content.products.waitlistBtn}
-                      <ArrowRight size={18} />
-                    </button>
+
+                    {product.betaLink && (
+                      <div className="mb-6 p-4 bg-teal-50 rounded-xl border border-teal-100">
+                        <a 
+                          href={product.betaLink}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex items-center gap-2 text-teal-700 font-bold hover:text-teal-800 transition-colors"
+                        >
+                          <ExternalLink size={18} /> Download Beta on App Store
+                        </a>
+                        {product.disclaimer && (
+                          <p className="text-xs text-teal-600/70 mt-1 font-medium italic">
+                            * {product.disclaimer}
+                          </p>
+                        )}
+                      </div>
+                    )}
+
+                    {!product.betaLink && (
+                      <button 
+                        onClick={isService ? onQuoteClick : onJoinWaitlistClick}
+                        className={`px-6 py-3 rounded-lg font-bold transition-all shadow-md flex items-center gap-2 ${
+                          isService 
+                          ? 'bg-[#0A2540] text-white hover:bg-teal-600' 
+                          : 'border border-slate-200 text-slate-700 hover:bg-slate-50'
+                        }`}
+                      >
+                        {isService ? content.products.quoteBtn : content.products.waitlistBtn}
+                        <ArrowRight size={18} />
+                      </button>
+                    )}
                  </div>
 
                  <div className="md:col-span-8 flex flex-col gap-6">

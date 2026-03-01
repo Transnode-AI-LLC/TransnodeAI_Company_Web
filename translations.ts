@@ -53,6 +53,8 @@ export interface ContentType {
       name: string;
       tagline: string;
       points: string[];
+      betaLink?: string;
+      disclaimer?: string;
     }[];
     waitlistBtn: string;
     quoteBtn: string;
@@ -259,8 +261,10 @@ const en: ContentType = {
       },
       {
         name: "Transeed",
-        tagline: "Smart iOS App for Healthy Habits",
-        points: ["Encourage healthy screen habits", "Monetary allowances for offline time", "Positive behavior motivation"]
+        tagline: "iOS App to Solve Parent's Headache of Kid's Screentime Problem",
+        points: ["Apple Screen Time API for secure monitoring", "Incentivized digital detox with real rewards", "Parent-child collaborative habit building"],
+        betaLink: "https://apps.apple.com/us/app/transeed/id6758642616",
+        disclaimer: "Still Improving"
       },
       {
         name: "Web Development Service & Digital Solutions",
@@ -610,8 +614,10 @@ const zh: ContentType = {
       },
       {
         name: "Transeed",
-        tagline: "智能 iOS 应用，培养健康习惯",
-        points: ["鼓励健康的屏幕使用习惯", "离线时间奖励真实金钱津贴", "通过激励将日常惯例转变为积极行为"]
+        tagline: "解决家长对孩子屏幕时间问题困扰的 iOS 应用",
+        points: ["集成 Apple Screen Time API 实现安全监控", "通过真实奖励激励数字化排毒", "家长与孩子协作的习惯养成模式"],
+        betaLink: "https://apps.apple.com/us/app/transeed/id6758642616",
+        disclaimer: "仍在改进中"
       },
       {
         name: "网站开发服务与数字解决方案",
@@ -884,8 +890,10 @@ const es: ContentType = {
       },
       {
         name: "Transeed",
-        tagline: "App inteligente para hábitos saludables",
-        points: ["Fomenta hábitos saludables frente a la pantalla", "Recompensas monetarias por tiempo desconectado", "Motivación para comportamientos positivos"]
+        tagline: "App iOS para resolver el dolor de cabeza de los padres con el tiempo de pantalla de los niños",
+        points: ["Integración con Apple Screen Time API para monitoreo seguro", "Desintoxicación digital incentivada con recompensas reales", "Creación de hábitos colaborativos entre padres e hijos"],
+        betaLink: "https://apps.apple.com/us/app/transeed/id6758642616",
+        disclaimer: "Sigue Mejorando"
       },
       {
         name: "Servicio de Desarrollo Web y Soluciones Digitales",
@@ -1158,8 +1166,10 @@ const ko: ContentType = {
       },
       {
         name: "Transeed",
-        tagline: "건강한 습관을 위한 스마트 iOS 앱",
-        points: ["건강한 스크린 사용 습관 장려", "오프라인 시간에 대한 실제 금전적 보상", "긍정적인 행동 동기 부여"]
+        tagline: "자녀의 스크린 타임 문제로 인한 부모의 고민을 해결하는 iOS 앱",
+        points: ["안전한 모니터링을 위한 Apple Screen Time API 통합", "실질적인 보상을 통한 디지털 디톡스 유도", "부모와 자녀가 함께하는 협력적 습관 형성"],
+        betaLink: "https://apps.apple.com/us/app/transeed/id6758642616",
+        disclaimer: "지속적으로 개선 중"
       },
       {
         name: "웹 개발 서비스 및 디지털 솔루션",

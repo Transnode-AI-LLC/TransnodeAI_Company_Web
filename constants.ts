@@ -73,12 +73,14 @@ export const PRODUCTS: ProductDetail[] = [
   },
   {
     name: "Transeed",
-    tagline: "Smart iOS App for Healthy Habits",
+    tagline: "iOS App to Solve Parent's Headache of Kid's Screentime Problem",
     points: [
-      "Encourage healthy screen habits",
-      "Monetary allowances for offline time",
-      "Positive behavior motivation"
-    ]
+      "Apple Screen Time API for secure monitoring",
+      "Incentivized digital detox with real rewards",
+      "Parent-child collaborative habit building"
+    ],
+    betaLink: "https://apps.apple.com/us/app/transeed/id6758642616",
+    disclaimer: "Still Improving"
   },
   {
     name: "Web Development Service & Digital Solutions",

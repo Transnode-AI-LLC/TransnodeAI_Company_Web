@@ -18,6 +18,8 @@ export interface ProductDetail {
   tagline: string;
   points: string[];
   isService?: boolean;
+  betaLink?: string;
+  disclaimer?: string;
 }
 
 export interface NavLink {

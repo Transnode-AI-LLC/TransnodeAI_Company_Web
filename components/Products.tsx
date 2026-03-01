@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ArrowRight, Sparkles } from 'lucide-react';
+import { ArrowRight, Sparkles, ExternalLink } from 'lucide-react';
 import { useLanguage } from './LanguageContext';
 import { PRODUCTS } from '../constants';
 
@@ -48,16 +48,36 @@ const Products: React.FC<ProductsProps> = ({ onJoinWaitlistClick, onQuoteClick }
                   ))}
                 </ul>
 
-                <button 
-                  onClick={isService ? onQuoteClick : onJoinWaitlistClick}
-                  className={`w-full py-3 rounded-lg border font-semibold transition-all duration-300 ${
-                    isService 
-                    ? 'bg-[#0A2540] text-white border-[#0A2540] hover:bg-teal-600 hover:border-teal-600' 
-                    : 'border-slate-300 text-slate-700 hover:border-[#0A2540] hover:bg-[#0A2540] hover:text-white'
-                  }`}
-                >
-                  {isService ? content.products.quoteBtn : content.products.waitlistBtn}
-                </button>
+                {product.betaLink && (
+                  <div className="mb-4">
+                    <a 
+                      href={product.betaLink}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 text-teal-600 font-bold hover:text-teal-700 transition-colors text-sm"
+                    >
+                      <ExternalLink size={16} /> Beta Download
+                    </a>
+                    {product.disclaimer && (
+                      <p className="text-[10px] text-slate-400 mt-1 italic">
+                        * {product.disclaimer}
+                      </p>
+                    )}
+                  </div>
+                )}
+
+                {!product.betaLink && (
+                  <button 
+                    onClick={isService ? onQuoteClick : onJoinWaitlistClick}
+                    className={`w-full py-3 rounded-lg border font-semibold transition-all duration-300 ${
+                      isService 
+                      ? 'bg-[#0A2540] text-white border-[#0A2540] hover:bg-teal-600 hover:border-teal-600' 
+                      : 'border-slate-300 text-slate-700 hover:border-[#0A2540] hover:bg-[#0A2540] hover:text-white'
+                    }`}
+                  >
+                    {isService ? content.products.quoteBtn : content.products.waitlistBtn}
+                  </button>
+                )}
               </div>
             );
           })}
