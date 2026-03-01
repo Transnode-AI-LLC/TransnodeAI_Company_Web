@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Mail, Linkedin, Instagram, MapPin, TrendingUp, Send, User, MessageSquare, Loader2, Youtube } from 'lucide-react';
+import { Mail, Linkedin, Instagram, MapPin, TrendingUp, Send, User, MessageSquare, Loader2, Youtube, MessageCircle } from 'lucide-react';
 import { useLanguage } from './LanguageContext';
 
 const ContactPage: React.FC = () => {
@@ -41,6 +41,26 @@ const ContactPage: React.FC = () => {
       <div className="grid lg:grid-cols-2 gap-12">
         {/* Left Column: Contact Info & Socials */}
         <div className="space-y-6">
+            {/* Discord Feedback Card */}
+            <div className="bg-gradient-to-br from-[#5865F2] to-[#4752C4] p-6 md:p-8 rounded-2xl shadow-lg text-white flex items-start gap-6 hover:shadow-xl transition-all group relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"></div>
+                <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center shrink-0 group-hover:scale-110 transition-transform">
+                    <MessageCircle size={24} />
+                </div>
+                <div className="relative z-10">
+                    <h3 className="text-xl font-bold mb-2">{content.contact.discordTitle}</h3>
+                    <p className="text-blue-100 mb-4">{content.contact.discordFeedback}</p>
+                    <a 
+                      href="https://discord.gg/MePAZQ83Bc" 
+                      target="_blank" 
+                      rel="noreferrer"
+                      className="inline-flex items-center gap-2 px-6 py-2.5 bg-white text-[#5865F2] font-bold rounded-lg hover:bg-blue-50 transition-colors shadow-sm"
+                    >
+                        {content.contact.discordJoin}
+                    </a>
+                </div>
+            </div>
+
             {/* Email Card */}
             <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 flex items-start gap-6 hover:shadow-md transition-shadow">
                 <div className="w-12 h-12 bg-blue-50 text-blue-600 rounded-xl flex items-center justify-center shrink-0">
@@ -127,6 +147,16 @@ const ContactPage: React.FC = () => {
                      >
                         <Youtube size={24} className="text-slate-400 group-hover:text-red-600 transition-colors" />
                         <span className="font-semibold text-slate-700 group-hover:text-red-600">{content.contact.socialPlatforms.youtube}</span>
+                    </a>
+
+                    <a 
+                       href="https://discord.gg/MePAZQ83Bc"
+                       target="_blank"
+                       rel="noreferrer"
+                       className="flex items-center gap-3 p-4 bg-[#5865F2]/10 rounded-xl border border-[#5865F2]/20 hover:bg-[#5865F2] hover:text-white transition-all group shadow-sm"
+                     >
+                        <MessageCircle size={24} className="text-[#5865F2] group-hover:text-white transition-colors" />
+                        <span className="font-semibold text-slate-700 group-hover:text-white">{content.contact.socialPlatforms.discord}</span>
                     </a>
 
                     <div className="flex items-center gap-3 p-4 bg-white rounded-xl border border-slate-200 shadow-sm">

@@ -122,8 +122,12 @@ export interface ContentType {
       instagram: string;
       tiktok: string;
       youtube: string;
+      discord: string;
       other: string;
     };
+    discordFeedback: string;
+    discordJoin: string;
+    discordTitle: string;
     formTitle: string;
     formName: string;
     formEmail: string;
@@ -370,8 +374,12 @@ const en: ContentType = {
       instagram: "Instagram",
       tiktok: "TikTok",
       youtube: "YouTube",
+      discord: "Discord",
       other: "Other"
     },
+    discordFeedback: "Join our Discord for internal feedback as our beloved users and stay tuned for fans events",
+    discordJoin: "Join Discord",
+    discordTitle: "Discord Community",
     formTitle: "Send a Message",
     formName: "Your Name",
     formEmail: "Email Address",
@@ -717,8 +725,12 @@ const zh: ContentType = {
       instagram: "Instagram",
       tiktok: "TikTok",
       youtube: "YouTube",
+      discord: "Discord",
       other: "其他"
     },
+    discordFeedback: "作为我们亲爱的用户加入我们的 Discord 进行内部反馈，并关注粉丝活动",
+    discordJoin: "加入 Discord",
+    discordTitle: "Discord 社区",
     formTitle: "Send a Message",
     formName: "您的姓名",
     formEmail: "电子邮件地址",
@@ -987,8 +999,12 @@ const es: ContentType = {
       instagram: "Instagram",
       tiktok: "TikTok",
       youtube: "YouTube",
+      discord: "Discord",
       other: "Otros"
     },
+    discordFeedback: "Únete a nuestro Discord para comentarios internos como nuestros queridos usuarios y mantente atento a los eventos para fans",
+    discordJoin: "Unirse a Discord",
+    discordTitle: "Comunidad de Discord",
     formTitle: "Send a Message",
     formName: "Tu Nombre",
     formEmail: "Correo Electrónico",
@@ -1257,8 +1273,12 @@ const ko: ContentType = {
       instagram: "Instagram",
       tiktok: "TikTok",
       youtube: "YouTube",
+      discord: "Discord",
       other: "기타"
     },
+    discordFeedback: "사랑하는 사용자로써 내부 피드백을 위해 Discord에 가입하고 팬 이벤트를 기대해 주세요",
+    discordJoin: "디스코드 가입",
+    discordTitle: "디스코드 커뮤니티",
     formTitle: "Send a Message",
     formName: "이름",
     formEmail: "이메일 주소",
