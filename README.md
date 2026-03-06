@@ -1,23 +1,5 @@
 <div align="center">
-
-# Transnode AI – Company Website
-
-Official repository for the **Transnode AI** company website.
-
-</div>
-
-## Overview
-
-This repository contains the source code for the Transnode AI company website.  
-The site introduces our products, mission, and technology while providing a public-facing platform for users, partners, and investors to learn more about what we are building.
-
-Main tabs:
-
-- Main Focus Areas
-- Products
-- Team
-- Contact Us
-   
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
 </div>
 
 # Run and deploy your AI Studio app
