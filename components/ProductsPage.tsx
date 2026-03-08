@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Sparkles, Layers, Cpu, Shield, ArrowRight, ExternalLink, Briefcase, CheckCircle2 } from 'lucide-react';
+import { Sparkles, Layers, Cpu, Shield, ArrowRight, ExternalLink, Briefcase, CheckCircle2, Apple } from 'lucide-react';
 import { useLanguage } from './LanguageContext';
 import { PRODUCTS } from '../constants';
 
@@ -71,7 +71,8 @@ const ProductsPage: React.FC<ProductsPageProps> = ({ onJoinWaitlistClick, onQuot
                           rel="noreferrer"
                           className="inline-flex items-center gap-2 text-teal-700 font-bold hover:text-teal-800 transition-colors"
                         >
-                          <ExternalLink size={18} /> Download Beta on App Store
+                          {product.betaLinkText?.includes('App Store') ? <Apple size={18} /> : <ExternalLink size={18} />} 
+                          {product.betaLinkText || 'Download Beta'}
                         </a>
                         {product.disclaimer && (
                           <p className="text-xs text-teal-600/70 mt-1 font-medium italic">
