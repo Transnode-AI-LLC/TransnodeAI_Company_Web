@@ -27,7 +27,7 @@ const Partners: React.FC = () => {
             <p className="text-center text-xs font-bold text-slate-400 tracking-[0.2em] uppercase mb-8">
               {content.aiModels.partnerWith}
             </p>
-            <div className="flex flex-wrap justify-center items-center gap-10 md:gap-16 grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all duration-500">
+            <div className="flex flex-wrap justify-center items-center gap-10 md:gap-16 transition-all duration-500">
                {/* NSF I-CORPS™ */}
                <a href="https://new.nsf.gov/funding/initiatives/i-corps" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-3 transition-transform hover:scale-105 group">
                  <img 
@@ -103,6 +103,19 @@ const Partners: React.FC = () => {
                  <div className="flex flex-col text-[11px] font-bold text-slate-700 leading-tight uppercase tracking-wide text-left group-hover:text-[#003262] transition-colors">
                    <span>UC Launch</span>
                    <span>Accelerator</span>
+                 </div>
+               </a>
+
+               {/* Google */}
+               <a href="https://cloud.google.com/startup" target="_blank" rel="noreferrer" className="flex items-center justify-center gap-3 transition-transform hover:scale-105 group">
+                 <img 
+                   src="https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg" 
+                   alt="Google" 
+                   className="h-6 md:h-7 w-auto" 
+                 />
+                 <div className="flex flex-col text-[11px] font-bold text-slate-700 leading-tight uppercase tracking-wide text-left group-hover:text-[#4285F4] transition-colors">
+                   <span>Google for</span>
+                   <span>Startups Cloud</span>
                  </div>
                </a>
 

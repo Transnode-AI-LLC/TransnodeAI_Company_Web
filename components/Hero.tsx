@@ -67,7 +67,7 @@ const Hero: React.FC<HeroProps> = ({ onJoinClick, onInvestorClick, onCrowdfundCl
           
           <div className="flex flex-col sm:flex-row flex-wrap gap-4 pt-4 items-center">
             {/* Typeform Embed Button Replacement */}
-            <div data-tf-live="01KBC0Y49235A7HN2C8F0672GW"></div>
+            <div data-tf-live="01KBC0Y49235A7HN2C8F0672GW" data-tf-open="click" data-tf-disable-auto-open></div>
 
             <button 
               onClick={onInvestorClick}
