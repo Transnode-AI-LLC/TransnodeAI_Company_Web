@@ -301,7 +301,7 @@ const en: ContentType = {
   team: {
     hero: {
       title: "Our Team",
-      subheading: "Our founding team brings global perspectives and academic backgrounds from top U.S., Canadian, and Chinese institutions such as UC San Diego, University of Waterloo, and Fudan University. We combine expertise in AI systems, backend engineering, and research operations to build reliable, intelligent tools for modern work and verification."
+      subheading: "Our founding team brings global perspectives and academic backgrounds from top U.S., Canadian, and Chinese institutions such as Cornell University, UC San Diego, University of Waterloo, and Fudan University. We combine expertise in AI systems, backend engineering, and research operations to build reliable, intelligent tools for modern work and verification."
     },
     philosophy: {
       title: "How We Work",
@@ -327,6 +327,7 @@ const en: ContentType = {
       title: "Founding Team",
       intro: "Our founding team comes from:",
       bullets: [
+        "Cornell University",
         "UC San Diego (Computer Engineering & Economics)",
         "Fudan University (Computer Science)",
         "University of Waterloo",
@@ -531,7 +532,7 @@ const en: ContentType = {
     tagline: "Building the future of learning and career credibility through intelligent systems.",
     company: "Company",
     legal: "Legal",
-    rights: "Transnode AI, LLC. All rights reserved."
+    rights: "Transnode AI™, LLC. All rights reserved."
   }
 };
 
@@ -658,7 +659,7 @@ const zh: ContentType = {
   team: {
     hero: {
       title: "我们的团队",
-      subheading: "我们的创始团队带来全球视野和来自加州大学圣地亚哥分校、滑铁卢大学和复旦大学等中美加顶尖机构的学术背景。我们结合 AI 系统、后端工程和研究运营方面的专业知识，为现代 work 和验证构建可靠의 지능형 도구。"
+      subheading: "我们的创始团队带来全球视野和来自康奈尔大学 (Cornell University)、加州大学圣地亚哥分校、滑铁卢大学和复旦大学等中美加顶尖机构的学术背景。我们结合 AI 系统、后端工程和研究运营方面的专业知识，为现代工作和验证构建可靠的智能工具。"
     },
     philosophy: {
       title: "我们的工作方式",
@@ -684,6 +685,7 @@ const zh: ContentType = {
       title: "创始团队",
       intro: "我们的创始团队来自：",
       bullets: [
+        "康奈尔大学 (Cornell University)",
         "加州大学圣地亚哥分校 (计算机工程与经济学)",
         "复旦大学 (计算机科学)",
         "滑铁卢大学 (University of Waterloo)",
@@ -811,7 +813,7 @@ const zh: ContentType = {
     tagline: "通过智能系统构建研究和职业可信度的未来。",
     company: "公司",
     legal: "法律",
-    rights: "Transnode AI, LLC. 保留所有权利。"
+    rights: "Transnode AI™, LLC. 保留所有权利。"
   }
 };
 
@@ -938,7 +940,7 @@ const es: ContentType = {
   team: {
     hero: {
       title: "Nuestro Equipo",
-      subheading: "Nuestro equipo fundador aporta perspectivas globales y antecedentes académicos de las mejores instituciones de EE. UU., Canadá y China, como UC San Diego, la Universidad de Waterloo y la Universidad de Fudan."
+      subheading: "Nuestro equipo fundador aporta perspectivas globales y antecedentes académicos de las mejores instituciones de EE. UU., Canadá y China, como la Universidad de Cornell, UC San Diego, la Universidad de Waterloo y la Universidad de Fudan."
     },
     philosophy: {
       title: "Cómo Trabajamos",
@@ -964,6 +966,7 @@ const es: ContentType = {
       title: "Equipo Fundador",
       intro: "Nuestro equipo fundador proviene de:",
       bullets: [
+        "Universidad de Cornell",
         "UC San Diego (Ingeniería Informática y Economía)",
         "Universidad de Fudan (Ciencias de la Computación)",
         "Universidad de Waterloo",
@@ -1091,7 +1094,7 @@ const es: ContentType = {
     tagline: "Construyendo el futuro de la credibilidad investigadora.",
     company: "Empresa",
     legal: "Legal",
-    rights: "Transnode AI, LLC. Todos los derechos reservados."
+    rights: "Transnode AI™, LLC. Todos los derechos reservados."
   }
 };
 
@@ -1218,7 +1221,7 @@ const ko: ContentType = {
   team: {
     hero: {
       title: "우리 팀",
-      subheading: "창립 팀은 UC San Diego, 워털루 대학교(University of Waterloo) 및 복단대학교(Fudan University)와 같은 미국, 캐나다 및 중국 최고의 기관에서 글로벌 관점과 학문적 배경을 제공합니다."
+      subheading: "창립 팀은 코넬 대학교(Cornell University), UC San Diego, 워털루 대학교(University of Waterloo) 및 복단대학교(Fudan University)와 같은 미국, 캐나다 및 중국 최고의 기관에서 글로벌 관점과 학문적 배경을 제공합니다."
     },
     philosophy: {
       title: "우리의 업무 방식",
@@ -1244,6 +1247,7 @@ const ko: ContentType = {
       title: "창립 팀",
       intro: "창립 팀 출신:",
       bullets: [
+        "코넬 대학교 (Cornell University)",
         "UC San Diego (컴퓨터 공학 및 경제학)",
         "Fudan University (컴퓨터 과학)",
         "워털루 대학교 (University of Waterloo)",
@@ -1371,7 +1375,7 @@ const ko: ContentType = {
     tagline: "지능형 시스템을 통한 연구 및 경력 신뢰성의 미래 구축.",
     company: "회사",
     legal: "법적",
-    rights: "Transnode AI, LLC. 판권 소유."
+    rights: "Transnode AI™, LLC. 판권 소유."
   }
 };
 

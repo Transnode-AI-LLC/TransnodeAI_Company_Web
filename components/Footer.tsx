@@ -36,7 +36,16 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
     <footer className="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
         <div className="col-span-1 md:col-span-2">
-          <div className="text-white text-xl font-bold mb-4">Transnode AI, LLC</div>
+          <div className="text-white text-xl font-bold mb-4">
+            <a 
+              href="https://tsdr.uspto.gov./#caseNumber=99522055&caseSearchType=US_APPLICATION&caseType=DEFAULT&searchType=statusSearch" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-teal-400 transition-colors inline-flex items-baseline"
+            >
+              Transnode AI<sup className="text-[10px] ml-0.5">TM</sup>, LLC
+            </a>
+          </div>
           <p className="max-w-xs mb-4">
              {content.footer.tagline}
           </p>
