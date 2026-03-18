@@ -56,6 +56,7 @@ export interface ContentType {
       betaLink?: string;
       betaLinkText?: string;
       disclaimer?: string;
+      status?: string;
     }[];
     waitlistBtn: string;
     quoteBtn: string;
@@ -269,7 +270,8 @@ const en: ContentType = {
         points: ["Apple Screen Time API for secure monitoring", "Incentivized digital detox with real rewards", "Parent-child collaborative habit building"],
         betaLink: "https://apps.apple.com/us/app/transeed/id6758642616",
         betaLinkText: "Download Beta on App Store",
-        disclaimer: "Still Improving"
+        disclaimer: "Recently Launched",
+        status: "Recently Launched"
       },
       {
         name: "Web Development Service & Digital Solutions",
@@ -627,7 +629,8 @@ const zh: ContentType = {
         points: ["集成 Apple Screen Time API 实现安全监控", "通过真实奖励激励数字化排毒", "家长与孩子协作的习惯养成模式"],
         betaLink: "https://apps.apple.com/us/app/transeed/id6758642616",
         betaLinkText: "在 App Store 下载 Beta 版",
-        disclaimer: "仍在改进中"
+        disclaimer: "最近发布",
+        status: "最近发布"
       },
       {
         name: "网站开发服务与数字解决方案",
@@ -908,7 +911,8 @@ const es: ContentType = {
         points: ["Integración con Apple Screen Time API para monitoreo seguro", "Desintoxicación digital incentivada con recompensas reales", "Creación de hábitos colaborativos entre padres e hijos"],
         betaLink: "https://apps.apple.com/us/app/transeed/id6758642616",
         betaLinkText: "Descargar Beta en App Store",
-        disclaimer: "Sigue Mejorando"
+        disclaimer: "Lanzado Recientemente",
+        status: "Lanzado Recientemente"
       },
       {
         name: "Servicio de Desarrollo Web y Soluciones Digitales",
@@ -1189,7 +1193,8 @@ const ko: ContentType = {
         points: ["안전한 모니터링을 위한 Apple Screen Time API 통합", "실질적인 보상을 통한 디지털 디톡스 유도", "부모와 자녀가 함께하는 협력적 습관 형성"],
         betaLink: "https://apps.apple.com/us/app/transeed/id6758642616",
         betaLinkText: "App Store에서 베타 다운로드",
-        disclaimer: "지속적으로 개선 중"
+        disclaimer: "최근 출시됨",
+        status: "최근 출시됨"
       },
       {
         name: "웹 개발 서비스 및 디지털 솔루션",

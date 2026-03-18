@@ -20,6 +20,7 @@ export interface ProductDetail {
   isService?: boolean;
   betaLink?: string;
   disclaimer?: string;
+  status?: string;
 }
 
 export interface NavLink {

@@ -80,7 +80,8 @@ export const PRODUCTS: ProductDetail[] = [
       "Parent-child collaborative habit building"
     ],
     betaLink: "https://apps.apple.com/us/app/transeed/id6758642616",
-    disclaimer: "Still Improving"
+    disclaimer: "Recently Launched",
+    status: "Recently Launched"
   },
   {
     name: "Web Development Service & Digital Solutions",

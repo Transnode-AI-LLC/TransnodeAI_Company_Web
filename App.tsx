@@ -1,5 +1,6 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import Navbar, { ViewState } from './components/Navbar';
 import Hero from './components/Hero';
 import Partners from './components/Partners';
@@ -24,88 +25,95 @@ const AppContent: React.FC = () => {
   const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
   const [isInvestorOpen, setIsInvestorOpen] = useState(false);
   const [isCrowdfundOpen, setIsCrowdfundOpen] = useState(false);
-  
-  const [currentView, setCurrentView] = useState<ViewState>('home');
-  const [legalSection, setLegalSection] = useState<'privacy' | 'terms' | 'confidentiality'>('terms');
+  const location = useLocation();
+  const navigate = useNavigate();
 
-  const handleNavigate = (view: ViewState, section?: string) => {
-    if (view === 'legal' && section) {
-      setLegalSection(section as 'privacy' | 'terms' | 'confidentiality');
-    }
-    setCurrentView(view);
+  // Scroll to top on route change
+  useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'instant' });
-  };
+  }, [location.pathname]);
 
   const handleQuoteClick = () => {
-    handleNavigate('contact');
+    navigate('/contact');
   };
 
-  const renderContent = () => {
-    switch (currentView) {
-      case 'team':
-        return (
-          <div className="pt-24 min-h-screen bg-slate-50">
-            <Team />
-          </div>
-        );
-      case 'focus':
-        return (
-          <div className="pt-24 min-h-screen bg-slate-50">
-            <FocusAreasPage />
-          </div>
-        );
-      case 'products':
-        return (
-          <div className="pt-24 min-h-screen bg-slate-50">
-            <ProductsPage 
-              onJoinWaitlistClick={() => setIsWaitlistOpen(true)} 
-              onQuoteClick={handleQuoteClick}
-            />
-          </div>
-        );
-      case 'contact':
-        return (
-          <div className="pt-24 min-h-screen bg-slate-50">
-            <ContactPage />
-          </div>
-        );
-      case 'legal':
-        return (
-          <div className="pt-24 min-h-screen bg-slate-50">
-            <LegalPage initialSection={legalSection} />
-          </div>
-        );
-      case 'home':
-      default:
-        return (
-          <>
-            <Hero 
-              onJoinClick={() => setIsWaitlistOpen(true)} 
-              onInvestorClick={() => setIsInvestorOpen(true)}
-              onCrowdfundClick={() => setIsCrowdfundOpen(true)}
-            />
-            <Partners />
-            <Features />
-            <Trust />
-            <AIModels />
-            <Audience />
-            <Products 
-              onJoinWaitlistClick={() => setIsWaitlistOpen(true)} 
-              onQuoteClick={handleQuoteClick}
-            />
-            <Careers />
-          </>
-        );
-    }
+  // Determine current view based on pathname for Navbar highlight
+  const getCurrentView = (): ViewState => {
+    const path = location.pathname;
+    if (path === '/') return 'home';
+    if (path === '/team') return 'team';
+    if (path === '/focus') return 'focus';
+    if (path === '/products') return 'products';
+    if (path === '/contact') return 'contact';
+    if (['/privacy', '/terms', '/confidentiality'].includes(path)) return 'legal';
+    return 'home';
   };
 
   return (
     <div className="min-h-screen bg-white">
-      <Navbar onNavigate={handleNavigate} currentView={currentView} />
+      <Navbar currentView={getCurrentView()} />
       <main>
-        {renderContent()}
+        <Routes>
+          <Route path="/" element={
+            <>
+              <Hero 
+                onJoinClick={() => setIsWaitlistOpen(true)} 
+                onInvestorClick={() => setIsInvestorOpen(true)}
+                onCrowdfundClick={() => setIsCrowdfundOpen(true)}
+              />
+              <Partners />
+              <Features />
+              <Trust />
+              <AIModels />
+              <Audience />
+              <Products 
+                onJoinWaitlistClick={() => setIsWaitlistOpen(true)} 
+                onQuoteClick={handleQuoteClick}
+              />
+              <Careers />
+            </>
+          } />
+          <Route path="/team" element={
+            <div className="pt-24 min-h-screen bg-slate-50">
+              <Team />
+            </div>
+          } />
+          <Route path="/focus" element={
+            <div className="pt-24 min-h-screen bg-slate-50">
+              <FocusAreasPage />
+            </div>
+          } />
+          <Route path="/products" element={
+            <div className="pt-24 min-h-screen bg-slate-50">
+              <ProductsPage 
+                onJoinWaitlistClick={() => setIsWaitlistOpen(true)} 
+                onQuoteClick={handleQuoteClick}
+              />
+            </div>
+          } />
+          <Route path="/contact" element={
+            <div className="pt-24 min-h-screen bg-slate-50">
+              <ContactPage />
+            </div>
+          } />
+          <Route path="/privacy" element={
+            <div className="pt-24 min-h-screen bg-slate-50">
+              <LegalPage initialSection="privacy" />
+            </div>
+          } />
+          <Route path="/terms" element={
+            <div className="pt-24 min-h-screen bg-slate-50">
+              <LegalPage initialSection="terms" />
+            </div>
+          } />
+          <Route path="/confidentiality" element={
+            <div className="pt-24 min-h-screen bg-slate-50">
+              <LegalPage initialSection="confidentiality" />
+            </div>
+          } />
+        </Routes>
       </main>
-      <Footer onNavigate={handleNavigate} />
+      <Footer />
       
       {/* Modal Overlays */}
       <JoinAccessModal 

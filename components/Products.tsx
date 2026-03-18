@@ -33,7 +33,7 @@ const Products: React.FC<ProductsProps> = ({ onJoinWaitlistClick, onQuoteClick }
               <div key={idx} className="bg-slate-50 rounded-2xl p-8 border border-slate-100 flex flex-col h-full">
                 <div className="mb-6">
                   <span className={`text-xs font-bold px-2 py-1 rounded uppercase ${isService ? 'bg-blue-100 text-blue-800' : 'bg-teal-100 text-teal-800'}`}>
-                    {isService ? 'Service Available' : 'Coming Soon'}
+                    {product.status || (isService ? 'Service Available' : 'Coming Soon')}
                   </span>
                 </div>
                 <h3 className="text-2xl font-bold text-[#0A2540]">{product.name}</h3>

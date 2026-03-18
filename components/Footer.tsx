@@ -1,36 +1,19 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { useLanguage } from './LanguageContext';
 import { Language } from '../translations';
 import { Globe } from 'lucide-react';
 import { ViewState } from './Navbar';
 
-interface FooterProps {
-  onNavigate?: (view: ViewState, section?: string) => void;
-}
-
-const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
+const Footer: React.FC = () => {
   const { content, language, setLanguage } = useLanguage();
-
-  const handleLegalClick = (e: React.MouseEvent, section: string) => {
-    // If we want to allow the browser to navigate to the absolute URL on a real production site,
-    // we would remove e.preventDefault(). But for the internal app experience, we keep it.
-    e.preventDefault();
-    if (onNavigate) {
-      onNavigate('legal', section);
-    }
-  };
-
-  const handleNavClick = (e: React.MouseEvent, view: ViewState) => {
-    e.preventDefault();
-    if (onNavigate) {
-      onNavigate(view);
-    }
-  };
 
   const E_VERIFY_URL = "https://image2url.com/r2/default/images/1771036150475-b62cdba1-ca69-49e3-b263-e69892119176.png";
   const E_VERIFY_LINK = "https://drive.google.com/file/d/13tnxeSEUnQnsfMTCM2Jkc5cpaUXXnC0i/view?usp=sharing";
-  const POLICY_URL = "https://www.transnode.ai/policy";
+  const PRIVACY_URL = "https://www.transnode.ai/privacy";
+  const TERMS_URL = "https://www.transnode.ai/terms";
+  const CONFIDENTIALITY_URL = "https://www.transnode.ai/confidentiality";
 
   return (
     <footer className="bg-slate-900 text-slate-400 py-12 border-t border-slate-800">
@@ -79,19 +62,19 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <h4 className="text-white font-semibold mb-4">{content.footer.company}</h4>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="#focus" onClick={(e) => handleNavClick(e, 'focus')} className="hover:text-teal-400 transition-colors">
+              <Link to="/focus" className="hover:text-teal-400 transition-colors">
                 {content.nav.focus}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#team" onClick={(e) => handleNavClick(e, 'team')} className="hover:text-teal-400 transition-colors">
+              <Link to="/team" className="hover:text-teal-400 transition-colors">
                 {content.nav.team}
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#careers" onClick={(e) => handleNavClick(e, 'home')} className="hover:text-teal-400 transition-colors">
+              <Link to="/" className="hover:text-teal-400 transition-colors">
                 Careers
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -100,31 +83,28 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <h4 className="text-white font-semibold mb-4">{content.footer.legal}</h4>
           <ul className="space-y-2 text-sm">
             <li>
-              <a 
-                href={POLICY_URL} 
-                onClick={(e) => handleLegalClick(e, 'privacy')} 
+              <Link 
+                to="/privacy" 
                 className="hover:text-teal-400 transition-colors"
               >
                 {content.legalPage.sidebar.privacy}
-              </a>
+              </Link>
             </li>
             <li>
-              <a 
-                href={POLICY_URL} 
-                onClick={(e) => handleLegalClick(e, 'terms')} 
+              <Link 
+                to="/terms" 
                 className="hover:text-teal-400 transition-colors"
               >
                 {content.legalPage.sidebar.terms}
-              </a>
+              </Link>
             </li>
             <li>
-              <a 
-                href={POLICY_URL} 
-                onClick={(e) => handleLegalClick(e, 'confidentiality')} 
+              <Link 
+                to="/confidentiality" 
                 className="hover:text-teal-400 transition-colors"
               >
                 {content.legalPage.sidebar.confidentiality}
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
