@@ -490,21 +490,19 @@ const en: ContentType = {
     terms: {
       title: "Terms of Service",
       content: [
-        "TRANSNODE AI, LLC TERMS OF SERVICE",
-        "1. ACCEPTANCE OF TERMS",
-        "By accessing or using our Services, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our Services.",
-        "2. DESCRIPTION OF SERVICES",
-        "Transnode AI, LLC provides various AI-driven tools and services including AuthenlyUSA and AI Edu. We reserve the right to modify or discontinue any part of the Service at any time.",
-        "3. USER OBLIGATIONS",
-        "You agree to use the Services only for lawful purposes and in a manner that does not infringe the rights of others. You are responsible for maintaining the confidentiality of your account credentials.",
-        "4. INTELLECTUAL PROPERTY",
-        "The content, features, and functionality of the Services are owned by Transnode AI, LLC and are protected by international copyright, trademark, and other intellectual property laws.",
-        "5. LIMITATION OF LIABILITY",
-        "Transnode AI, LLC shall not be liable for any indirect, incidental, or consequential damages arising out of your use or inability to use the Services.",
-        "6. CHANGES TO TERMS",
-        "We reserve the right to update these Terms at any time. Your continued use of the Services after such changes constitutes acceptance of the new Terms.",
-        "7. CONTACT",
-        "For questions regarding these Terms, please contact legal@transnode.ai."
+        "TRANSNODE AI, LLC LICENSED APPLICATION END USER LICENSE AGREEMENT",
+        "1. ACKNOWLEDGMENT: This license is between you and Transnode AI, LLC. Apple is not responsible for the application or its content.",
+        "2. SCOPE OF LICENSE: We grant you a non-transferable license to use the application on any Apple-branded products that you own or control as permitted by the Usage Rules set forth in the Apple Media Services Terms and Conditions.",
+        "3. CONSENT TO USE OF DATA: You agree that we may collect and use technical data and related information to facilitate the provision of software updates, product support, and other services to you.",
+        "4. TERMINATION: The license is effective until terminated by you or us. Your rights under this license will terminate automatically if you fail to comply with any of its terms.",
+        "5. EXTERNAL SERVICES: The application may enable access to our and/or third-party services and websites. Use of External Services requires Internet access and acceptance of additional terms.",
+        "6. NO WARRANTY: TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE APPLICATION IS PROVIDED 'AS IS' AND 'AS AVAILABLE', WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND.",
+        "7. LIMITATION OF LIABILITY: TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT SHALL WE BE LIABLE FOR PERSONAL INJURY OR ANY INCIDENTAL, SPECIAL, INDIRECT, OR CONSEQUENTIAL DAMAGES WHATSOEVER.",
+        "8. LEGAL COMPLIANCE: You represent and warrant that (i) you are not located in a country that is subject to a U.S. Government embargo, and (ii) you are not listed on any U.S. Government list of prohibited or restricted parties.",
+        "9. GOVERNING LAW: The laws of the State of California, excluding its conflicts of law rules, govern this license and your use of the application.",
+        "10. COMPANY-WIDE POLICY: These terms and policies apply to all products developed by Transnode AI, LLC, including but not limited to AuthenlyUSA, AI Edu, Transeed, and the Earnie app.",
+        "11. SUBSCRIPTIONS AND IN-APP PURCHASES: Transnode offers optional in-app purchases and subscription plans. All purchases are processed through either the Apple App Store or Google Play, depending on your device. By making a purchase, you agree to the store’s terms and billing policies. To manage or cancel your subscription, use your App Store or Google Play account settings.",
+        "12. CONTACT: For questions regarding these Terms, please contact legal@transnode.ai."
       ]
     },
     confidentiality: {
@@ -805,7 +803,22 @@ const zh: ContentType = {
     },
     terms: {
       title: "服务条款",
-      content: ["请参阅英文版以获取完整的法律约束条款。", "感谢您关注 Transnode AI, LLC..."]
+      content: [
+        "请参阅英文版以获取完整的法律约束条款。",
+        "Transnode AI, LLC 许可应用程序最终用户许可协议：",
+        "1. 确认：本许可由您与 Transnode AI, LLC 签署。Apple 不对应用程序及其内容负责。",
+        "2. 许可范围：我们授予您在您拥有或控制的任何 Apple 品牌产品上使用该应用程序的不可转让许可。",
+        "3. 数据使用同意：您同意我们可以收集和使用技术数据及相关信息，以方便为您提供软件更新和产品支持。",
+        "4. 终止：本许可在您或我们终止前一直有效。如果您未能遵守任何条款，您的权利将自动终止。",
+        "5. 外部服务：应用程序可能允许访问我们和/或第三方的服务和网站。",
+        "6. 无担保：在适用法律允许的最大范围内，应用程序按“原样”和“可用”状态提供。",
+        "7. 责任限制：在法律不禁止的范围内，在任何情况下，我们均不对人身伤害或任何附带的、特殊的、间接的或后果性的损害负责。",
+        "8. 法律合规性：您声明并保证您不在受美国政府禁运的国家，且未被列入任何美国政府禁止或限制方名单。",
+        "9. 适用法律：加利福尼亚州法律（不包括其冲突法规则）管辖本许可及您对应用程序的使用。",
+        "10. 公司范围政策：这些条款和政策适用于 Transnode AI, LLC 开发的所有产品，包括但不限于 AuthenlyUSA、AI Edu、Transeed 和 Earnie 应用程序。",
+        "11. 订阅和应用内购买：Transnode 提供可选的应用内购买和订阅计划。所有购买均通过 Apple App Store 或 Google Play 处理，具体取决于您的设备。通过购买，您同意商店的条款和计费政策。要管理或取消您的订阅，请使用您的 App Store 或 Google Play 帐户设置。",
+        "12. 联系方式：如有疑问，请联系 legal@transnode.ai。"
+      ]
     },
     confidentiality: {
       title: "保密与安全协议",
@@ -1087,7 +1100,22 @@ const es: ContentType = {
     },
     terms: {
       title: "Términos de Servicio",
-      content: ["Consulte la versión en inglés para conocer los términos legales completos.", "Gracias por su interés en Transnode AI, LLC..."]
+      content: [
+        "Consulte la versión en inglés para conocer los términos legales completos.",
+        "ACUERDO DE LICENCIA DE USUARIO FINAL DE LA APLICACIÓN LICENCIADA DE TRANSNODE AI, LLC:",
+        "1. RECONOCIMIENTO: Esta licencia es entre usted y Transnode AI, LLC. Apple no es responsable de la aplicación ni de su contenido.",
+        "2. ALCANCE DE LA LICENCIA: Le otorgamos una licencia no transferible para usar la aplicación en cualquier producto de la marca Apple que posea o controle.",
+        "3. CONSENTIMIENTO PARA EL USO DE DATOS: Usted acepta que podemos recopilar y utilizar datos técnicos e información relacionada para facilitar la prestación de actualizaciones de software y soporte de productos.",
+        "4. TERMINACIÓN: La licencia es efectiva hasta que usted o nosotros la rescindan. Sus derechos bajo esta licencia terminarán automáticamente si no cumple con cualquiera de sus términos.",
+        "5. SERVICIOS EXTERNOS: La aplicación puede permitir el acceso a nuestros servicios y sitios web y/o de terceros.",
+        "6. SIN GARANTÍA: EN LA MEDIDA MÁXIMA PERMITIDA POR LA LEY APLICABLE, LA APLICACIÓN SE PROPORCIONA 'TAL CUAL' Y 'SEGÚN DISPONIBILIDAD'.",
+        "7. LIMITACIÓN DE RESPONSABILIDAD: EN LA MEDIDA EN QUE LA LEY NO LO PROHÍBA, EN NINGÚN CASO SEREMOS RESPONSABLES POR LESIONES PERSONALES O CUALQUIER DAÑO INCIDENTAL, ESPECIAL, INDIRECTO O CONSECUENTE.",
+        "8. CUMPLIMIENTO LEGAL: Usted declara y garantiza que (i) no se encuentra en un país sujeto a un embargo del Gobierno de los EE. UU. y (ii) no figura en ninguna lista del Gobierno de los EE. UU. de partes prohibidas o restringidas.",
+        "9. LEY APLICABLE: Las leyes del Estado de California rigen esta licencia y su uso de la aplicación.",
+        "10. POLÍTICA DE TODA LA EMPRESA: Estos términos y políticas se aplican a todos los productos desarrollados por Transnode AI, LLC, incluidos, entre otros, AuthenlyUSA, AI Edu, Transeed y la aplicación Earnie.",
+        "11. SUSCRIPCIONES Y COMPRAS DENTRO DE LA APLICACIÓN: Transnode ofrece compras opcionales dentro de la aplicación y planes de suscripción. Todas las compras se procesan a través de Apple App Store o Google Play, según su dispositivo. Al realizar una compra, usted acepta los términos y las políticas de facturación de la tienda. Para administrar o cancelar su suscripción, use la configuración de su cuenta de App Store o Google Play.",
+        "12. CONTACTO: Para preguntas, contáctenos en legal@transnode.ai."
+      ]
     },
     confidentiality: {
       title: "Acuerdo de Confidencialidad",
@@ -1369,7 +1397,22 @@ const ko: ContentType = {
     },
     terms: {
       title: "서비스 약관",
-      content: ["전체 법적 구속력이 있는 조항은 영문 버전을 참조하십시오.", "Transnode AI, LLC에 관심을 가져 주셔서 감사합니다..."]
+      content: [
+        "전체 법적 구속력이 있는 조항은 영문 버전을 참조하십시오.",
+        "TRANSNODE AI, LLC 라이선스 애플리케이션 최종 사용자 라이선스 계약:",
+        "1. 승인: 이 라이선스는 귀하와 Transnode AI, LLC 간의 계약입니다. Apple은 애플리케이션이나 그 콘텐츠에 대해 책임을 지지 않습니다.",
+        "2. 라이선스 범위: 당사는 귀하가 소유하거나 제어하는 모든 Apple 브랜드 제품에서 애플리케이션을 사용할 수 있는 양도 불가능한 라이선스를 귀하에게 부여합니다.",
+        "3. 데이터 사용 동의: 귀하는 당사가 소프트웨어 업데이트 및 제품 지원을 용이하게 하기 위해 기술 데이터 및 관련 정보를 수집하고 사용할 수 있음에 동의합니다.",
+        "4. 종료: 라이선스는 귀하 또는 당사가 종료할 때까지 유효합니다. 귀하가 약관을 준수하지 않을 경우 귀하의 권리는 자동으로 종료됩니다.",
+        "5. 외부 서비스: 애플리케이션은 당사 및/또는 제3자의 서비스 및 웹사이트에 대한 액세스를 활성화할 수 있습니다.",
+        "6. 보증 없음: 관련 법률이 허용하는 최대 범위 내에서 애플리케이션은 '있는 그대로' 및 '사용 가능한 상태로' 제공됩니다.",
+        "7. 책임 제한: 법률이 금지하지 않는 범위 내에서 당사는 어떠한 경우에도 인명 피해나 부수적, 특별, 간접적 또는 결과적 손해에 대해 책임을 지지 않습니다.",
+        "8. 법적 준수: 귀하는 (i) 미국 정부의 금수 조치 대상 국가에 거주하지 않으며, (ii) 미국 정부의 금지 또는 제한 대상 목록에 올라 있지 않음을 진술하고 보증합니다.",
+        "9. 준거법: 캘리포니아 주 법률이 이 라이선스와 귀하의 애플리케이션 사용을 규정합니다.",
+        "10. 전사적 정책: 이 약관 및 정책은 AuthenlyUSA, AI Edu, Transeed 및 Earnie 앱을 포함하되 이에 국한되지 않는 Transnode AI, LLC가 개발한 모든 제품에 적용됩니다.",
+        "11. 구독 및 인앱 구매: Transnode는 선택적 인앱 구매 및 구독 플랜을 제공합니다. 모든 구매는 장치에 따라 Apple App Store 또는 Google Play를 통해 처리됩니다. 구매함으로써 귀하는 해당 스토어의 약관 및 결제 정책에 동의하게 됩니다. 구독을 관리하거나 취소하려면 App Store 또는 Google Play 계정 설정을 사용하십시오.",
+        "12. 문의: 문의 사항은 legal@transnode.ai로 연락주시기 바랍니다."
+      ]
     },
     confidentiality: {
       title: "기밀 유지 및 보안 계약",
