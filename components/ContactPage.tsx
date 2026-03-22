@@ -311,6 +311,63 @@ const ContactPage: React.FC = () => {
                 )}
             </div>
 
+            {/* Newsletter Card */}
+            <div className="bg-white p-8 rounded-3xl shadow-lg border border-slate-100">
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="w-12 h-12 rounded-xl bg-emerald-50 flex items-center justify-center">
+                    <Mail className="w-6 h-6 text-emerald-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-[#0A2540]">{content.contact.newsletterTitle}</h3>
+                    <p className="text-slate-500 text-sm">{content.contact.newsletterSubtitle}</p>
+                  </div>
+                </div>
+
+                <div id="mc_embed_shell">
+                  <div id="mc_embed_signup">
+                    <form action="https://transnode.us22.list-manage.com/subscribe/post?u=0fe6c90241c657ee90ef1d0cb&id=76d18ce354&f_id=005ec2e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank">
+                      <div id="mc_embed_signup_scroll">
+                        <div className="mc-field-group mb-4">
+                          <label htmlFor="mce-EMAIL" className="block text-sm font-semibold text-slate-700 mb-1.5">Email Address <span className="asterisk text-red-500">*</span></label>
+                          <input type="email" name="EMAIL" className="required email w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all outline-none" id="mce-EMAIL" required />
+                        </div>
+                        <div className="mc-field-group mb-4">
+                          <label htmlFor="mce-FNAME" className="block text-sm font-semibold text-slate-700 mb-1.5">First Name</label>
+                          <input type="text" name="FNAME" className="text w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all outline-none" id="mce-FNAME" />
+                        </div>
+                        <div className="mc-field-group mb-4">
+                          <label htmlFor="mce-LNAME" className="block text-sm font-semibold text-slate-700 mb-1.5">Last Name</label>
+                          <input type="text" name="LNAME" className="text w-full px-4 py-3 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all outline-none" id="mce-LNAME" />
+                        </div>
+                        <div className="mc-field-group mb-6">
+                          <label htmlFor="mce-SMSPHONE" className="block text-sm font-semibold text-slate-700 mb-1.5">Phone Number</label>
+                          <div className="sms-phone-field flex gap-2">
+                            <div className="country-code-select relative">
+                              <div id="flag-display-SMSPHONE" className="flag-display absolute left-3 top-1/2 -translate-y-1/2 cursor-pointer flex items-center">
+                                <span id="flag-emoji-SMSPHONE" className="text-xl"></span>
+                              </div>
+                              <select id="country-select-SMSPHONE" className="country-select opacity-0 absolute inset-0 w-full h-full cursor-pointer"></select>
+                            </div>
+                            <input type="text" name="SMSPHONE" className="SMSPhone w-full px-4 py-3 pl-12 rounded-xl border border-slate-200 bg-slate-50 focus:bg-white focus:border-emerald-500 focus:ring-1 focus:ring-emerald-500 transition-all outline-none" id="mce-SMSPHONE" />
+                          </div>
+                          <div id="legal-text-SMSPHONE" className="text-[10px] text-slate-400 mt-2 leading-tight"></div>
+                        </div>
+                        <div id="mce-responses" className="clear foot">
+                          <div className="response hidden" id="mce-error-response"></div>
+                          <div className="response hidden" id="mce-success-response"></div>
+                        </div>
+                        <div aria-hidden="true" className="absolute left-[-5000px]">
+                          <input type="text" name="b_0fe6c90241c657ee90ef1d0cb_76d18ce354" tabIndex={-1} value="" />
+                        </div>
+                        <div className="clear foot">
+                          <input type="submit" name="subscribe" id="mc-embedded-subscribe" className="button w-full py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-xl shadow-lg transition-all cursor-pointer" value="Subscribe" />
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+            </div>
+
             {/* Investor Card */}
             <div className="bg-white p-6 md:p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col items-start gap-4 hover:shadow-md transition-shadow">
                 <div className="flex items-center gap-4 mb-2 w-full">

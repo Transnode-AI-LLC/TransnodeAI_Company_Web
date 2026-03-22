@@ -142,6 +142,8 @@ export interface ContentType {
     sentDesc: string;
     investorTitle: string;
     investorDesc: string;
+    newsletterTitle: string;
+    newsletterSubtitle: string;
   };
   faq: {
     title: string;
@@ -401,7 +403,9 @@ const en: ContentType = {
     sentTitle: "Message Sent!",
     sentDesc: "We'll get back to you shortly.",
     investorTitle: "Investors?",
-    investorDesc: "Subscribe to us on"
+    investorDesc: "Subscribe to us on",
+    newsletterTitle: "Subscribe to our Newsletter",
+    newsletterSubtitle: "Stay updated with our latest news and products.",
   },
   faq: {
     title: "Frequently Asked Questions",
@@ -758,7 +762,9 @@ const zh: ContentType = {
     sentTitle: "消息已发送！",
     sentDesc: "我们会尽快回复您。",
     investorTitle: "投资者？",
-    investorDesc: "在 Crunchbase 上关注我们"
+    investorDesc: "在 Crunchbase 上关注我们",
+    newsletterTitle: "订阅我们的通讯",
+    newsletterSubtitle: "随时了解我们的最新动态和产品。",
   },
   faq: {
     title: "常见问题",
@@ -1055,7 +1061,9 @@ const es: ContentType = {
     sentTitle: "¡Mensaje Enviado!",
     sentDesc: "Te responderemos en breve.",
     investorTitle: "¿Inversores?",
-    investorDesc: "Síguenos en Crunchbase"
+    investorDesc: "Síguenos en Crunchbase",
+    newsletterTitle: "Suscríbete a nuestro boletín",
+    newsletterSubtitle: "Mantente al día con nuestras últimas noticias y productos.",
   },
   faq: {
     title: "Preguntas Frecuentes",
@@ -1352,7 +1360,9 @@ const ko: ContentType = {
     sentTitle: "메시지 전송됨!",
     sentDesc: "곧 답변 드리겠습니다.",
     investorTitle: "투자자?",
-    investorDesc: "Crunchbase에서 팔로우"
+    investorDesc: "Crunchbase에서 팔로우",
+    newsletterTitle: "뉴스레터 구독",
+    newsletterSubtitle: "최신 뉴스 및 제품 정보를 받아보세요.",
   },
   faq: {
     title: "자주 묻는 질문",
