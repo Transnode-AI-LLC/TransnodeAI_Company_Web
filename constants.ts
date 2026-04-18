@@ -72,7 +72,7 @@ export const PRODUCTS: ProductDetail[] = [
     ]
   },
   {
-    name: "Transeed",
+    name: "Earnie",
     tagline: "iOS App to Solve Parent's Headache of Kid's Screentime Problem",
     points: [
       "Apple Screen Time API for secure monitoring",
