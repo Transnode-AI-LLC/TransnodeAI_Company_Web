@@ -455,7 +455,8 @@ const en: ContentType = {
         "a. Personal Identification Information: When you register for our Services, request information, or subscribe to our materials, we may ask you to provide certain personally identifiable information, including but not limited to: Email address, First and last name, Phone number, Address, State, Province, ZIP/Postal code, City.",
         "b. Verification Data (AuthenlyUSA): To provide credibility and verification services, we may collect and process sensitive information such as government-issued identification documents, academic transcripts, professional certifications, and biometric data (specifically facial scans for identity matching). This data is processed strictly for the purpose of verification and is handled with the highest level of security.",
         "c. Academic and Career Data (AI Edu): We collect information regarding your learning interests, academic history, and goals to facilitate accurate matching and personalized learning paths.",
-        "d. Usage Data: We may also collect information on how the Service is accessed and used ('Usage Data'). This Usage Data may include information such as your computer's Internet Protocol address (e.g., IP address), browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers, and other diagnostic data.",
+        "d. Account and Authentication Data (Earnie): When you access or interact with Earnie or related services, we may collect account-related information necessary to authenticate and manage your access. This may include your username, email address, and securely stored authentication credentials. If you choose to sign in using third-party authentication providers such as Google or Apple (OAuth), we may receive limited profile information (such as your name, email address, and unique account identifier) as permitted by those providers. We do not receive or store your third-party account passwords. All authentication data is processed securely and used solely for account access, security, and service functionality.",
+        "e. Usage Data: We may also collect information on how the Service is accessed and used ('Usage Data'). This Usage Data may include information such as your computer's Internet Protocol address (e.g., IP address), browser type, browser version, the pages of our Service that you visit, the time and date of your visit, the time spent on those pages, unique device identifiers, and other diagnostic data.",
         "3. HOW WE USE YOUR INFORMATION",
         "Transnode AI, LLC uses the collected data for the following purposes:",
         "• To provide and maintain our Services, including the verification of credentials and facilitation of learning tools.",
@@ -488,7 +489,8 @@ const en: ContentType = {
         "• The right to withdraw consent.",
         "If you wish to exercise any of these rights, please contact us at legal@transnode.ai.",
         "9. CONTACT US",
-        "If you have any questions about this Privacy Policy, please contact us by email: legal@transnode.ai."
+        "If you wish to exercise any of these rights, including requesting deletion of your data, please contact us at legal@transnode.ai.",
+        "Upon receiving a verified request, we will delete or anonymize your personal data within a reasonable timeframe, unless retention is required to comply with legal obligations, resolve disputes, enforce agreements, or maintain security and fraud prevention measures."
       ]
     },
     terms: {
