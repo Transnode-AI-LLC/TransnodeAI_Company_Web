@@ -267,7 +267,7 @@ const en: ContentType = {
         disclaimer: "Beta and still in development"
       },
       {
-        name: "Transeed",
+        name: "Earnie",
         tagline: "iOS App to Solve Parent's Headache of Kid's Screentime Problem",
         points: ["Apple Screen Time API for secure monitoring", "Incentivized digital detox with real rewards", "Parent-child collaborative habit building"],
         betaLink: "https://apps.apple.com/us/app/transeed/id6758642616",
