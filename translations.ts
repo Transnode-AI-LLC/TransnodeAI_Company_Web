@@ -55,6 +55,8 @@ export interface ContentType {
       points: string[];
       betaLink?: string;
       betaLinkText?: string;
+      websiteLink?: string;
+      websiteLinkText?: string;
       disclaimer?: string;
       status?: string;
     }[];
@@ -272,6 +274,8 @@ const en: ContentType = {
         points: ["Apple Screen Time API for secure monitoring", "Incentivized digital detox with real rewards", "Parent-child collaborative habit building"],
         betaLink: "https://apps.apple.com/us/app/transeed/id6758642616",
         betaLinkText: "Download Beta on App Store",
+        websiteLink: "https://earnie.transnode.ai",
+        websiteLinkText: "Visit Earnie Website",
         disclaimer: "Recently Launched",
         status: "Recently Launched"
       },
@@ -633,6 +637,8 @@ const zh: ContentType = {
         points: ["集成 Apple Screen Time API 实现安全监控", "通过真实奖励激励数字化排毒", "家长与孩子协作的习惯养成模式"],
         betaLink: "https://apps.apple.com/us/app/transeed/id6758642616",
         betaLinkText: "在 App Store 下载 Beta 版",
+        websiteLink: "https://earnie.transnode.ai",
+        websiteLinkText: "访问 Earnie 网站",
         disclaimer: "最近发布",
         status: "最近发布"
       },
@@ -932,6 +938,8 @@ const es: ContentType = {
         points: ["Integración con Apple Screen Time API para monitoreo seguro", "Desintoxicación digital incentivada con recompensas reales", "Creación de hábitos colaborativos entre padres e hijos"],
         betaLink: "https://apps.apple.com/us/app/transeed/id6758642616",
         betaLinkText: "Descargar Beta en App Store",
+        websiteLink: "https://earnie.transnode.ai",
+        websiteLinkText: "Visitar Sitio Web Earnie",
         disclaimer: "Lanzado Recientemente",
         status: "Lanzado Recientemente"
       },
@@ -1231,6 +1239,8 @@ const ko: ContentType = {
         points: ["안전한 모니터링을 위한 Apple Screen Time API 통합", "실질적인 보상을 통한 디지털 디톡스 유도", "부모와 자녀가 함께하는 협력적 습관 형성"],
         betaLink: "https://apps.apple.com/us/app/transeed/id6758642616",
         betaLinkText: "App Store에서 베타 다운로드",
+        websiteLink: "https://earnie.transnode.ai",
+        websiteLinkText: "Earnie 웹사이트 방문",
         disclaimer: "최근 출시됨",
         status: "최근 출시됨"
       },

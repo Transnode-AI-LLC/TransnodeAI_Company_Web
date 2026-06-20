@@ -19,6 +19,9 @@ export interface ProductDetail {
   points: string[];
   isService?: boolean;
   betaLink?: string;
+  betaLinkText?: string;
+  websiteLink?: string;
+  websiteLinkText?: string;
   disclaimer?: string;
   status?: string;
 }

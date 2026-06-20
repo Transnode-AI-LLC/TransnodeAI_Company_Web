@@ -63,17 +63,32 @@ const ProductsPage: React.FC<ProductsPageProps> = ({ onJoinWaitlistClick, onQuot
                       ))}
                     </ul>
 
-                    {product.betaLink && (
+                    {(product.betaLink || product.websiteLink) && (
                       <div className="mb-6 p-4 bg-teal-50 rounded-xl border border-teal-100">
-                        <a 
-                          href={product.betaLink}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="inline-flex items-center gap-2 text-teal-700 font-bold hover:text-teal-800 transition-colors"
-                        >
-                          {product.betaLinkText?.includes('App Store') ? <Apple size={18} /> : <ExternalLink size={18} />} 
-                          {product.betaLinkText || 'Download Beta'}
-                        </a>
+                        <div className="flex flex-col gap-3">
+                          {product.betaLink && (
+                            <a 
+                              href={product.betaLink}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="inline-flex items-center gap-2 text-teal-700 font-bold hover:text-teal-800 transition-colors"
+                            >
+                              {product.betaLinkText?.includes('App Store') ? <Apple size={18} /> : <ExternalLink size={18} />}
+                              {product.betaLinkText || 'Download Beta'}
+                            </a>
+                          )}
+                          {product.websiteLink && (
+                            <a 
+                              href={product.websiteLink}
+                              target="_blank"
+                              rel="noreferrer"
+                              className="inline-flex items-center gap-2 text-[#0A2540] font-bold hover:text-teal-800 transition-colors"
+                            >
+                              <ExternalLink size={18} />
+                              {product.websiteLinkText || 'Visit Website'}
+                            </a>
+                          )}
+                        </div>
                         {product.disclaimer && (
                           <p className="text-xs text-teal-600/70 mt-1 font-medium italic">
                             * {product.disclaimer}
@@ -82,7 +97,7 @@ const ProductsPage: React.FC<ProductsPageProps> = ({ onJoinWaitlistClick, onQuot
                       </div>
                     )}
 
-                    {!product.betaLink && (
+                    {!product.betaLink && !product.websiteLink && (
                       <button 
                         onClick={isService ? onQuoteClick : onJoinWaitlistClick}
                         className={`px-6 py-3 rounded-lg font-bold transition-all shadow-md flex items-center gap-2 ${
