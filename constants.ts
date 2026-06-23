@@ -80,6 +80,9 @@ export const PRODUCTS: ProductDetail[] = [
       "Parent-child collaborative habit building"
     ],
     betaLink: "https://apps.apple.com/us/app/transeed/id6758642616",
+    betaLinkText: "Download Beta on App Store",
+    websiteLink: "https://earnie.transnode.ai",
+    websiteLinkText: "Visit Earnie Website",
     disclaimer: "Recently Launched",
     status: "Recently Launched"
   },

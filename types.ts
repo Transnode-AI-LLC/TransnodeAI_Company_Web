@@ -19,6 +19,9 @@ export interface ProductDetail {
   points: string[];
   isService?: boolean;
   betaLink?: string;
+  betaLinkText?: string;
+  websiteLink?: string;
+  websiteLinkText?: string;
   disclaimer?: string;
   status?: string;
 }
@@ -26,4 +29,11 @@ export interface ProductDetail {
 export interface NavLink {
   label: string;
   href: string;
+}
+
+export interface Contributor {
+  name: string;
+  role: string;
+  bio?: string;
+  linkedin?: string;
 }

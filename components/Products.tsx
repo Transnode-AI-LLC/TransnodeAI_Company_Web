@@ -48,16 +48,30 @@ const Products: React.FC<ProductsProps> = ({ onJoinWaitlistClick, onQuoteClick }
                   ))}
                 </ul>
 
-                {product.betaLink && (
+                {(product.betaLink || product.websiteLink) && (
                   <div className="mb-4">
-                    <a 
-                      href={product.betaLink}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="inline-flex items-center gap-2 text-teal-600 font-bold hover:text-teal-700 transition-colors text-sm"
-                    >
-                      <ExternalLink size={16} /> Beta Download
-                    </a>
+                    <div className="flex flex-col gap-2">
+                      {product.betaLink && (
+                        <a 
+                          href={product.betaLink}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex items-center gap-2 text-teal-600 font-bold hover:text-teal-700 transition-colors text-sm"
+                        >
+                          <ExternalLink size={16} /> {product.betaLinkText || 'Beta Download'}
+                        </a>
+                      )}
+                      {product.websiteLink && (
+                        <a 
+                          href={product.websiteLink}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="inline-flex items-center gap-2 text-[#0A2540] font-bold hover:text-teal-700 transition-colors text-sm"
+                        >
+                          <ExternalLink size={16} /> {product.websiteLinkText || 'Visit Website'}
+                        </a>
+                      )}
+                    </div>
                     {product.disclaimer && (
                       <p className="text-[10px] text-slate-400 mt-1 italic">
                         * {product.disclaimer}
@@ -66,7 +80,7 @@ const Products: React.FC<ProductsProps> = ({ onJoinWaitlistClick, onQuoteClick }
                   </div>
                 )}
 
-                {!product.betaLink && (
+                {!product.betaLink && !product.websiteLink && (
                   <button 
                     onClick={isService ? onQuoteClick : onJoinWaitlistClick}
                     className={`w-full py-3 rounded-lg border font-semibold transition-all duration-300 ${
