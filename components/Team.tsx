@@ -1,6 +1,7 @@
 import React from 'react';
 import { Shield, Rocket, Compass, Globe, Zap, Brain, CheckCircle2, ArrowRight } from 'lucide-react';
 import { useLanguage } from './LanguageContext';
+import { CONTRIBUTORS } from '../contributors';
 
 const Team: React.FC = () => {
   const { content } = useLanguage();
@@ -129,7 +130,47 @@ const Team: React.FC = () => {
         </div>
       </section>
 
-      {/* Section 5: Opportunities */}
+      {/* Section 5: Contributors */} 
+      <section className="py-20 px-6 bg-slate-50 border-y border-slate-200">
+        <div className="max-w-6xl mx-auto">
+          <div className="mb-10">
+            <h2 className="text-3xl font-bold text-[#0A2540] mb-4">Contributor List</h2>
+            <p className="max-w-2xl text-slate-600 leading-relaxed">
+              A shared list of the people who have contributed to Transnode initiatives.
+            </p>
+          </div>
+
+          <div className="bg-white rounded-3xl border border-slate-200 p-8 md:p-10 shadow-sm">
+            <div className="grid gap-4 sm:grid-cols-2">
+              {CONTRIBUTORS.map((contributor) => (
+                <div
+                  key={contributor.name}
+                  className="flex h-full flex-col rounded-2xl border border-slate-100 bg-slate-50 p-5"
+                >
+                  <p className="font-semibold text-[#0A2540]">{contributor.name}</p>
+                  <p className="text-sm text-slate-500 mb-3">{contributor.role}</p>
+                  {contributor.bio && (
+                    <p className="text-sm text-slate-600 leading-relaxed mb-4">{contributor.bio}</p>
+                  )}
+                  {contributor.linkedin && (
+                    <a
+                      href={contributor.linkedin}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="mt-auto inline-flex items-center justify-center gap-2 self-start rounded-lg bg-[#0A2540] px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-teal-600"
+                    >
+                      {content.contact.socialPlatforms.linkedin}
+                      <ArrowRight size={16} />
+                    </a>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 6: Opportunities */}
       <section className="py-24 px-6 bg-[#0A2540] text-white relative overflow-hidden">
         {/* Background Gradients */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-teal-500/10 rounded-full blur-3xl translate-x-1/2 -translate-y-1/2"></div>
