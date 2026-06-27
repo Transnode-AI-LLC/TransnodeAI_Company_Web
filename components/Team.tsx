@@ -147,7 +147,7 @@ const Team: React.FC = () => {
                   key={contributor.name}
                   className="flex h-full flex-col rounded-2xl border border-slate-100 bg-slate-50 p-5"
                 >
-                  <p className="font-semibold text-[#0A2540]">{contributor.name}</p>
+                  <p className="mb-4 font-semibold text-[#0A2540]">{contributor.name}</p>
                   {contributor.linkedin && (
                     <a
                       href={contributor.linkedin}
