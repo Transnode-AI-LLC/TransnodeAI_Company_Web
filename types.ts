@@ -33,7 +33,5 @@ export interface NavLink {
 
 export interface Contributor {
   name: string;
-  role: string;
-  bio?: string;
   linkedin?: string;
 }
