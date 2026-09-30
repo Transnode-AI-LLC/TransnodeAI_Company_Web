@@ -10,6 +10,10 @@ This repository contains the source code for the official [Transnode AI, LLC](ht
 - Tailwind CSS
 - React Router
 
+## Edit with Google AI Studio
+
+The website can also be opened in [Google AI Studio](https://ai.studio/apps/687e79c9-6a7d-4f6b-951e-8a48210c8570), which provides a direct and easy way to edit the application in a browser. To publish changes made there, make sure they are committed and pushed to the `main` branch so AWS Amplify can deploy them.
+
 ## Local development
 
 ### Prerequisites
