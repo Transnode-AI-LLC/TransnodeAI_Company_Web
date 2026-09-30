@@ -58,7 +58,7 @@ const Products: React.FC<ProductsProps> = ({ onJoinWaitlistClick, onQuoteClick }
                           rel="noreferrer"
                           className="inline-flex items-center gap-2 text-teal-600 font-bold hover:text-teal-700 transition-colors text-sm"
                         >
-                          <ExternalLink size={16} /> {product.betaLinkText || 'Beta Download'}
+                          <ExternalLink size={16} /> {product.betaLinkText || 'Download'}
                         </a>
                       )}
                       {product.websiteLink && (

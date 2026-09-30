@@ -36,9 +36,16 @@ const ProductsPage: React.FC<ProductsPageProps> = ({ onJoinWaitlistClick, onQuot
                 <div>
                    <div className="flex items-center gap-4 mb-3">
                      <h2 className="text-3xl font-bold text-[#0A2540]">{product.name}</h2>
-                     <span className={`text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide ${isService ? 'bg-blue-100 text-blue-800' : 'bg-teal-100 text-teal-800'}`}>
-                       {isService ? 'Active' : 'Beta'}
-                     </span>
+                     {isService && (
+                       <span className="text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide bg-blue-100 text-blue-800">
+                         Active
+                       </span>
+                     )}
+                     {product.status && product.status.toLowerCase() !== 'beta' && (
+                       <span className="text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide bg-teal-100 text-teal-800">
+                         {product.status}
+                       </span>
+                     )}
                    </div>
                    <p className="text-xl text-slate-500 font-medium italic">{product.tagline}</p>
                 </div>
@@ -74,7 +81,7 @@ const ProductsPage: React.FC<ProductsPageProps> = ({ onJoinWaitlistClick, onQuot
                               className="inline-flex items-center gap-2 text-teal-700 font-bold hover:text-teal-800 transition-colors"
                             >
                               {product.betaLinkText?.includes('App Store') ? <Apple size={18} /> : <ExternalLink size={18} />}
-                              {product.betaLinkText || 'Download Beta'}
+                              {product.betaLinkText || 'Download'}
                             </a>
                           )}
                           {product.websiteLink && (
