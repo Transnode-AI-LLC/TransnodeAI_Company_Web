@@ -265,8 +265,7 @@ const en: ContentType = {
         tagline: "Credibility Engine",
         points: ["AI credibility scoring", "Skill-based verification tasks", "Personalized career insight"],
         betaLink: "https://www.authenlyusa.com",
-        betaLinkText: "Visit Beta Website",
-        disclaimer: "Beta and still in development"
+        betaLinkText: "Visit the Product Website"
       },
       {
         name: "Earnie",
@@ -628,11 +627,10 @@ const zh: ContentType = {
         tagline: "可信度引擎",
         points: ["AI 可信度评分", "基于技能的验证任务", "个性化职业洞察"],
         betaLink: "https://www.authenlyusa.com",
-        betaLinkText: "访问 Beta 网站",
-        disclaimer: "Beta 版，仍在开发中"
+        betaLinkText: "访问产品官网"
       },
       {
-        name: "Transeed",
+        name: "Earnie",
         tagline: "解决家长对孩子屏幕时间问题困扰的 iOS 应用",
         points: ["集成 Apple Screen Time API 实现安全监控", "通过真实奖励激励数字化排毒", "家长与孩子协作的习惯养成模式"],
         betaLink: "https://apps.apple.com/us/app/transeed/id6758642616",
@@ -929,11 +927,10 @@ const es: ContentType = {
         tagline: "Motor de Credibilidad",
         points: ["Puntuación de credibilidad IA", "Verificación de habilidades", "Información profesional personalizada"],
         betaLink: "https://www.authenlyusa.com",
-        betaLinkText: "Visitar Sitio Web Beta",
-        disclaimer: "Beta y aún en desarrollo"
+        betaLinkText: "Visitar el Sitio Web del Producto"
       },
       {
-        name: "Transeed",
+        name: "Earnie",
         tagline: "App iOS para resolver el dolor de cabeza de los padres con el tiempo de pantalla de los niños",
         points: ["Integración con Apple Screen Time API para monitoreo seguro", "Desintoxicación digital incentivada con recompensas reales", "Creación de hábitos colaborativos entre padres e hijos"],
         betaLink: "https://apps.apple.com/us/app/transeed/id6758642616",
@@ -1230,11 +1227,10 @@ const ko: ContentType = {
         tagline: "신뢰성 엔진",
         points: ["AI 신뢰성 점수", "기술 기반 검증 과제", "개인화된 진로 통찰력"],
         betaLink: "https://www.authenlyusa.com",
-        betaLinkText: "베타 웹사이트 방문",
-        disclaimer: "베타 버전이며 아직 개발 중입니다"
+        betaLinkText: "제품 웹사이트 방문"
       },
       {
-        name: "Transeed",
+        name: "Earnie",
         tagline: "자녀의 스크린 타임 문제로 인한 부모의 고민을 해결하는 iOS 앱",
         points: ["안전한 모니터링을 위한 Apple Screen Time API 통합", "실질적인 보상을 통한 디지털 디톡스 유도", "부모와 자녀가 함께하는 협력적 습관 형성"],
         betaLink: "https://apps.apple.com/us/app/transeed/id6758642616",
