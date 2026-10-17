@@ -68,6 +68,24 @@ const LegalPage: React.FC<LegalPageProps> = ({ initialSection = 'terms' }) => {
                       {content.legalPage.privacy.content.map((paragraph, idx) => (
                          <p key={idx}>{paragraph}</p>
                       ))}
+                      {content.legalPage.privacy.analytics && (
+                        <section className="pt-2">
+                          <h2 className="mb-3 text-xl font-bold text-[#0A2540]">
+                            {content.legalPage.privacy.analytics.title}
+                          </h2>
+                          <p>
+                            {content.legalPage.privacy.analytics.content}{' '}
+                            <a
+                              href="https://posthog.com/privacy"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="font-medium text-teal-700 underline decoration-teal-300 underline-offset-2 hover:text-teal-800"
+                            >
+                              posthog.com/privacy
+                            </a>.
+                          </p>
+                        </section>
+                      )}
                    </div>
                 </div>
              )}

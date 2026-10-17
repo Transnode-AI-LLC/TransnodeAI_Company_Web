@@ -165,6 +165,10 @@ export interface ContentType {
     privacy: {
       title: string;
       content: string[];
+      analytics?: {
+        title: string;
+        content: string;
+      };
     };
     terms: {
       title: string;
@@ -494,7 +498,11 @@ const en: ContentType = {
         "9. CONTACT US",
         "If you wish to exercise any of these rights, including requesting deletion of your data, please contact us at legal@transnode.ai.",
         "Upon receiving a verified request, we will delete or anonymize your personal data within a reasonable timeframe, unless retention is required to comply with legal obligations, resolve disputes, enforce agreements, or maintain security and fraud prevention measures."
-      ]
+      ],
+      analytics: {
+        title: "App analytics",
+        content: "We use PostHog to help us improve the app experience. PostHog may use session replay to investigate how users interact with the app, including screen navigation and taps. Sensitive information such as text inputs, passwords, albums, and images is automatically masked and never recorded. Sessions taken for debugging purposes are kept only for 30 days or until the engineering team fixes the bug. This data is used solely to identify bugs and improve the app, and is not shared or sold. You can opt out or request data deletion. Session replay data is processed by PostHog, Inc., a US-based company. PostHog acts as a data processor on our behalf and does not use your data for its own purposes. You can review PostHog's privacy policy at"
+      }
     },
     terms: {
       title: "Terms of Service",
@@ -811,7 +819,11 @@ const zh: ContentType = {
     },
     privacy: {
       title: "隐私政策",
-      content: ["请参阅英文版以获取完整的法律约束条款。", "Transnode AI, LLC 尊重您的隐私..."]
+      content: ["请参阅英文版以获取完整的法律约束条款。", "Transnode AI, LLC 尊重您的隐私..."],
+      analytics: {
+        title: "App analytics",
+        content: "We use PostHog to help us improve the app experience. PostHog may use session replay to investigate how users interact with the app, including screen navigation and taps. Sensitive information such as text inputs, passwords, albums, and images is automatically masked and never recorded. Sessions taken for debugging purposes are kept only for 30 days or until the engineering team fixes the bug. This data is used solely to identify bugs and improve the app, and is not shared or sold. You can opt out or request data deletion. Session replay data is processed by PostHog, Inc., a US-based company. PostHog acts as a data processor on our behalf and does not use your data for its own purposes. You can review PostHog's privacy policy at"
+      }
     },
     terms: {
       title: "服务条款",
@@ -1111,7 +1123,11 @@ const es: ContentType = {
     },
     privacy: {
       title: "Política de Privacidad",
-      content: ["Consulte la versión en inglés para conocer los términos legales completos.", "Transnode AI, LLC respeta su privacidad..."]
+      content: ["Consulte la versión en inglés para conocer los términos legales completos.", "Transnode AI, LLC respeta su privacidad..."],
+      analytics: {
+        title: "App analytics",
+        content: "We use PostHog to help us improve the app experience. PostHog may use session replay to investigate how users interact with the app, including screen navigation and taps. Sensitive information such as text inputs, passwords, albums, and images is automatically masked and never recorded. Sessions taken for debugging purposes are kept only for 30 days or until the engineering team fixes the bug. This data is used solely to identify bugs and improve the app, and is not shared or sold. You can opt out or request data deletion. Session replay data is processed by PostHog, Inc., a US-based company. PostHog acts as a data processor on our behalf and does not use your data for its own purposes. You can review PostHog's privacy policy at"
+      }
     },
     terms: {
       title: "Términos de Servicio",
@@ -1411,7 +1427,11 @@ const ko: ContentType = {
     },
     privacy: {
       title: "개인 정보 보호 정책",
-      content: ["전체 법적 구속력이 있는 조항은 영문 버전을 참조하십시오.", "Transnode AI, LLC는 귀하의 개인 정보를 존중합니다..."]
+      content: ["전체 법적 구속력이 있는 조항은 영문 버전을 참조하십시오.", "Transnode AI, LLC는 귀하의 개인 정보를 존중합니다..."],
+      analytics: {
+        title: "App analytics",
+        content: "We use PostHog to help us improve the app experience. PostHog may use session replay to investigate how users interact with the app, including screen navigation and taps. Sensitive information such as text inputs, passwords, albums, and images is automatically masked and never recorded. Sessions taken for debugging purposes are kept only for 30 days or until the engineering team fixes the bug. This data is used solely to identify bugs and improve the app, and is not shared or sold. You can opt out or request data deletion. Session replay data is processed by PostHog, Inc., a US-based company. PostHog acts as a data processor on our behalf and does not use your data for its own purposes. You can review PostHog's privacy policy at"
+      }
     },
     terms: {
       title: "서비스 약관",
