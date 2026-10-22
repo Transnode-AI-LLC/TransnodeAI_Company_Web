@@ -48,24 +48,24 @@ const Hero: React.FC<HeroProps> = ({ onJoinClick, onInvestorClick, onCrowdfundCl
       {/* Gradient overlay to ensure text readability on the left */}
       <div className="absolute inset-0 bg-gradient-to-r from-[#0A2540] via-[#0A2540]/80 to-transparent pointer-events-none z-0" />
 
-      <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center z-10 w-full">
+      <div className="relative max-w-7xl mx-auto px-6 grid md:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] gap-8 lg:gap-12 items-center z-10 w-full">
         
         {/* Copy */}
-        <div className="space-y-8 animate-fade-in-up">
+        <div className="max-w-3xl space-y-7 md:space-y-8 animate-fade-in-up">
           <div className="inline-flex items-center px-3 py-1 rounded-full bg-blue-500/10 border border-blue-400/20 text-blue-300 text-xs font-semibold tracking-wide uppercase backdrop-blur-sm">
             <span className="w-2 h-2 rounded-full bg-blue-400 mr-2 animate-pulse" style={{ animationDuration: '4s' }}></span>
             {content.hero.badge}
           </div>
           
-          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[1.08] tracking-tight text-balance">
             {content.hero.headlineStart} <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-teal-300 to-emerald-400">{content.hero.headlineHighlight}</span> {content.hero.headlineEnd}
           </h1>
           
-          <p className="text-lg text-slate-300 leading-relaxed max-w-xl border-l-2 border-teal-500/30 pl-6 bg-[#0A2540]/50 backdrop-blur-sm rounded-r-lg py-2">
+          <p className="max-w-2xl rounded-xl border border-white/10 border-l-2 border-l-teal-400/60 bg-[#0A2540]/60 px-5 py-4 text-base sm:text-lg leading-relaxed text-slate-200 shadow-lg shadow-black/5 backdrop-blur-sm">
             {content.hero.subheadline}
           </p>
           
-          <div className="flex flex-col sm:flex-row flex-wrap gap-4 pt-4 items-center">
+          <div className="flex flex-col sm:flex-row flex-wrap gap-4 pt-2 items-stretch sm:items-center">
             {/* Typeform Embed Button Replacement */}
             <div data-tf-live="01KBC0Y49235A7HN2C8F0672GW" data-tf-open="click" data-tf-disable-auto-open></div>
 

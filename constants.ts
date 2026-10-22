@@ -9,8 +9,8 @@ export const NAV_LINKS = [
 ];
 
 export const HERO_CONTENT = {
-  headline: "Building Intelligent Tools for Modern Learning, Careers, and Collaboration.",
-  subheadline: "Transnode AI, LLC develops cross-border AI products that enhance credibility, accelerate research, and streamline workflows—trusted by students, researchers, and global SMEs.",
+  headline: "Technology That Helps People and Businesses Move Forward.",
+  subheadline: "We build digital products that help individuals, families, and businesses navigate important challenges and create new opportunities.",
   ctaPrimary: "Join Early Access",
   ctaSecondary: "Investor Inquiry",
   ctaCrowdfund: "1 Dollar Crowdfunding Appreciation",

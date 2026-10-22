@@ -196,10 +196,10 @@ const en: ContentType = {
   },
   hero: {
     badge: "AI for Global Impact",
-    headlineStart: "Building",
-    headlineHighlight: "Intelligent Tools",
-    headlineEnd: "for Modern Collaboration.",
-    subheadline: "Transnode AI, LLC develops cross-border AI products that enhance credibility, accelerate research, and streamline workflows—trusted by students, researchers, and global SMEs.",
+    headlineStart: "Technology That",
+    headlineHighlight: "Helps People",
+    headlineEnd: "and Businesses Move Forward.",
+    subheadline: "We build digital products that help individuals, families, and businesses navigate important challenges and create new opportunities.",
     ctaPrimary: "Join Early Access",
     ctaSecondary: "Investor Inquiry",
     ctaCrowdfund: "1 Dollar Crowdfunding Appreciation"
@@ -562,10 +562,10 @@ const zh: ContentType = {
   },
   hero: {
     badge: "AI 助力全球影响力",
-    headlineStart: "构建",
-    headlineHighlight: "智能工具",
-    headlineEnd: "赋能现代协作",
-    subheadline: "Transnode AI, LLC 开发跨境 AI 产品，提升可信度、加速研究并在全球范围内简化工作流程——深受学生、研究人员和全球中小企业的信赖。",
+    headlineStart: "科技助力",
+    headlineHighlight: "个人与企业",
+    headlineEnd: "不断向前。",
+    subheadline: "我们打造数字产品，帮助个人、家庭和企业应对重要挑战，创造新的机遇。",
     ctaPrimary: "加入早期体验",
     ctaSecondary: "投资者咨询",
     ctaCrowdfund: "1美元众筹致谢"
@@ -866,10 +866,10 @@ const es: ContentType = {
   },
   hero: {
     badge: "IA para Impacto Global",
-    headlineStart: "Construyendo",
-    headlineHighlight: "Herramientas Inteligentes",
-    headlineEnd: "para la Colaboración Moderna.",
-    subheadline: "Transnode AI, LLC desarrolla productos de IA transfronterizos que mejoran la credibilidad, aceleran la investigación y agilizan los flujos de trabajo, con la confianza de estudiantes, investigadores y PYMES globales.",
+    headlineStart: "Tecnología que",
+    headlineHighlight: "impulsa a personas",
+    headlineEnd: "y empresas hacia adelante.",
+    subheadline: "Creamos productos digitales que ayudan a personas, familias y empresas a afrontar desafíos importantes y generar nuevas oportunidades.",
     ctaPrimary: "Acceso Anticipado",
     ctaSecondary: "Consulta de Inversores",
     ctaCrowdfund: "Crowdfunding de 1 Dólar"
@@ -1170,10 +1170,10 @@ const ko: ContentType = {
   },
   hero: {
     badge: "글로벌 임팩트를 위한 AI",
-    headlineStart: "구축",
-    headlineHighlight: "지능형 도구",
-    headlineEnd: "현대적 협업을 위한",
-    subheadline: "Transnode AI, LLC는 신뢰성을 높이고 연구를 가속화하며 워크플로를 간소화하는 국경 간 AI 제품을 개발합니다.",
+    headlineStart: "사람과 기업의",
+    headlineHighlight: "발전을 돕는",
+    headlineEnd: "기술.",
+    subheadline: "우리는 개인, 가족, 기업이 중요한 과제를 해결하고 새로운 기회를 만들 수 있도록 돕는 디지털 제품을 개발합니다.",
     ctaPrimary: "초기 액세스 참여",
     ctaSecondary: "투자자 문의",
     ctaCrowdfund: "1달러 크라우드펀딩 감사"
