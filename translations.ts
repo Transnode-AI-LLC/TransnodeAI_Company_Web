@@ -57,8 +57,7 @@ export interface ContentType {
       betaLinkText?: string;
       websiteLink?: string;
       websiteLinkText?: string;
-      disclaimer?: string;
-      status?: string;
+      milestones?: string[];
     }[];
     waitlistBtn: string;
     quoteBtn: string;
@@ -279,8 +278,7 @@ const en: ContentType = {
         betaLinkText: "Download Beta on App Store",
         websiteLink: "https://earnie.transnode.ai",
         websiteLinkText: "Visit Earnie Website",
-        disclaimer: "Recently Launched",
-        status: "Recently Launched"
+        milestones: ["20K+ installs", "4K+ monthly active users across Google Play & App Store"]
       },
       {
         name: "Web Development Service & Digital Solutions",
@@ -645,8 +643,7 @@ const zh: ContentType = {
         betaLinkText: "在 App Store 下载 Beta 版",
         websiteLink: "https://earnie.transnode.ai",
         websiteLinkText: "访问 Earnie 网站",
-        disclaimer: "最近发布",
-        status: "最近发布"
+        milestones: ["20K+ 次安装", "Google Play 与 App Store 合计 4K+ 月活跃用户"]
       },
       {
         name: "网站开发服务与数字解决方案",
@@ -949,8 +946,7 @@ const es: ContentType = {
         betaLinkText: "Descargar Beta en App Store",
         websiteLink: "https://earnie.transnode.ai",
         websiteLinkText: "Visitar Sitio Web Earnie",
-        disclaimer: "Lanzado Recientemente",
-        status: "Lanzado Recientemente"
+        milestones: ["20K+ instalaciones", "4K+ usuarios activos mensuales en Google Play y App Store"]
       },
       {
         name: "Servicio de Desarrollo Web y Soluciones Digitales",
@@ -1253,8 +1249,7 @@ const ko: ContentType = {
         betaLinkText: "App Store에서 베타 다운로드",
         websiteLink: "https://earnie.transnode.ai",
         websiteLinkText: "Earnie 웹사이트 방문",
-        disclaimer: "최근 출시됨",
-        status: "최근 출시됨"
+        milestones: ["20K+ 설치", "Google Play 및 App Store 합산 4K+ 월간 활성 사용자"]
       },
       {
         name: "웹 개발 서비스 및 디지털 솔루션",

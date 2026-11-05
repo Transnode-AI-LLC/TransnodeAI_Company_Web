@@ -29,6 +29,7 @@ const ProductsPage: React.FC<ProductsPageProps> = ({ onJoinWaitlistClick, onQuot
       <div className="grid gap-12">
         {content.products.items.map((product, idx) => {
           const isService = PRODUCTS[idx]?.isService;
+          const isEarnie = product.name === 'Earnie';
           
           return (
             <div key={idx} className="bg-white rounded-3xl p-8 md:p-10 border border-slate-200 shadow-sm hover:shadow-xl transition-all duration-300">
@@ -41,13 +42,18 @@ const ProductsPage: React.FC<ProductsPageProps> = ({ onJoinWaitlistClick, onQuot
                          Active
                        </span>
                      )}
-                     {product.status && product.status.toLowerCase() !== 'beta' && (
-                       <span className="text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide bg-teal-100 text-teal-800">
-                         {product.status}
-                       </span>
-                     )}
                    </div>
                    <p className="text-xl text-slate-500 font-medium italic">{product.tagline}</p>
+                   {product.milestones && (
+                     <div className="flex flex-wrap gap-2 mt-4" aria-label="Earnie milestones">
+                       {product.milestones.map((milestone) => (
+                         <span key={milestone} className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-teal-50 to-sky-50 px-3 py-1.5 text-xs font-bold text-teal-800 ring-1 ring-inset ring-teal-200">
+                           <Sparkles size={13} className="text-amber-500" aria-hidden="true" />
+                           {milestone}
+                         </span>
+                       ))}
+                     </div>
+                   )}
                 </div>
                 <div className="flex gap-2">
                    <div className="w-10 h-10 bg-slate-100 rounded-full flex items-center justify-center text-slate-500" title="API Ready"><Cpu size={20} /></div>
@@ -96,11 +102,6 @@ const ProductsPage: React.FC<ProductsPageProps> = ({ onJoinWaitlistClick, onQuot
                             </a>
                           )}
                         </div>
-                        {product.disclaimer && (
-                          <p className="text-xs text-teal-600/70 mt-1 font-medium italic">
-                            * {product.disclaimer}
-                          </p>
-                        )}
                       </div>
                     )}
 
@@ -154,9 +155,10 @@ const ProductsPage: React.FC<ProductsPageProps> = ({ onJoinWaitlistClick, onQuot
                         </div>
                       </div>
                     ) : (
-                      <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200 h-full">
-                        <h3 className="font-bold text-[#0A2540] mb-4 text-sm uppercase tracking-wide">Technical Highlights</h3>
-                        <div className="grid sm:grid-cols-2 gap-6">
+                      <div className={`bg-slate-50 rounded-2xl p-6 border border-slate-200 h-full ${isEarnie ? 'relative overflow-hidden' : ''}`}>
+                        <div className={isEarnie ? 'relative z-10 md:pr-48' : ''}>
+                          <h3 className="font-bold text-[#0A2540] mb-4 text-sm uppercase tracking-wide">Technical Highlights</h3>
+                          <div className="grid sm:grid-cols-2 gap-6">
                            <div className="space-y-1">
                               <p className="font-semibold text-slate-800 text-sm">Integration</p>
                               <p className="text-xs text-slate-500 leading-relaxed">RESTful API with Webhook support for real-time data sync across platforms.</p>
@@ -173,7 +175,15 @@ const ProductsPage: React.FC<ProductsPageProps> = ({ onJoinWaitlistClick, onQuot
                               <p className="font-semibold text-slate-800 text-sm">Analytics</p>
                               <p className="text-xs text-slate-500 leading-relaxed">Comprehensive dashboard with automated reporting and deep-insight exports.</p>
                            </div>
+                          </div>
                         </div>
+                        {isEarnie && (
+                          <img
+                            src="/assets/earnie-mascot-family.png"
+                            alt="Earnie mascot family"
+                            className="mt-6 w-full max-w-52 mx-auto rounded-2xl object-cover shadow-sm ring-1 ring-sky-100 md:absolute md:-bottom-3 md:-right-3 md:mt-0 md:w-48"
+                          />
+                        )}
                       </div>
                     )}
                  </div>

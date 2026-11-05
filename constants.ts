@@ -83,8 +83,7 @@ export const PRODUCTS: ProductDetail[] = [
     betaLinkText: "Download Beta on App Store",
     websiteLink: "https://earnie.transnode.ai",
     websiteLinkText: "Visit Earnie Website",
-    disclaimer: "Recently Launched",
-    status: "Recently Launched"
+    milestones: ["20K+ installs", "4K+ monthly active users across Google Play & App Store"]
   },
   {
     name: "Web Development Service & Digital Solutions",

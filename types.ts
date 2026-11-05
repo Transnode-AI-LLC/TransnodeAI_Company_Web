@@ -22,8 +22,7 @@ export interface ProductDetail {
   betaLinkText?: string;
   websiteLink?: string;
   websiteLinkText?: string;
-  disclaimer?: string;
-  status?: string;
+  milestones?: string[];
 }
 
 export interface NavLink {
